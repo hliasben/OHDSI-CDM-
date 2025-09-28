@@ -1,0 +1,801 @@
+p_id,nr_fuvisits,discontinued,days_discontinued_diagnosis,reason_treatment,days_surgery_diagnosis,pt,pn,pm,gleason1_rad_prost,gleason2_rad_prost,prostatevolume,tumorvolume,ece,svi,pos_surgical_margins,postoperative_psa,pathology_reported,adjuvant_radiotherapy,year_discontinued
+1,14,Robot radical prostatectomy,380,Based on protocol advice,,,,9,,0,,,0,0,,,1,,2010
+2,1,Robot radical prostatectomy,420,Other,,,,,3,0,,,,,,,,,2012
+3,1,Died,399,Based on protocol advice,,T2c,,9,3,3,48,,,,0,,,,2013
+4,4,External beam radiotherapy,389,Based on protocol advice,,,,0,3,0,65,,,,0,0,,,2011
+5,10,Robot radical prostatectomy,453,N/A,,,9,0,,0,,,,0,,,,0,2014
+6,2,Robot radical prostatectomy,434,Lost to FU,,,,,,0,,,,,,"0,03",1,,2013
+7,5,External beam radiotherapy,499,Based on protocol advice,,,0,9,,4,,,,,,,,,2016
+8,5,External beam radiotherapy,441,Other,,,,0,,0,,6,,,0,,,,2011
+9,4,Antiandrogens,435,Based on protocol advice,,T3,0,,,0,,,,,,,,,2014
+10,8,Laparoscopic Radical Prostatectomy,440,Based on protocol advice,,T2c,,,0,,,,,,,0,1,,2011
+11,2,Robot radical prostatectomy,426,N/A,,,,,0,4,,,,0,1,"0,03",,0,2015
+12,8,Robot radical prostatectomy,430,Anxiety,,,,,3,,,,,,,,,,2017
+13,4,Robot radical prostatectomy,374,N/A,,,,9,,0,82,,,,,0,2,,2012
+14,4,Robot radical prostatectomy,428,Based on protocol advice,,,,,0,4,,,,,,,,0,2014
+15,17,Laparoscopic Radical Prostatectomy,445,N/A,,T2c,9,9,4,0,,,,,,,1,0,2014
+16,4,Brachytherapy High dose rate,399,N/A,,,,,0,,,,,,,0,1,,2016
+17,1,Other or unknown treatment,431,Based on protocol advice,,,,,,,,,,,,,1,,2014
+18,15,LHRH Agonists,202,Other,,"T2a  (a,b,c)",0,,3,,,,,0,,"<0,10",2,,2010
+19,9,Brachytherapy High dose rate,381,Anxiety,,,,,,0,,,0,,0,,,,2014
+20,23,Laparoscopic Radical Prostatectomy,407,Based on protocol advice,,"T2a  (a,b,c)",,,,0,,,0,,1,,,0,2011
+21,9,Brachytherapy dose rate unknown,395,Based on protocol advice,,,,,,0,,,,,,,1,,2017
+22,12,Other or unknown treatment,756,Anxiety,,,,,,3,,,,,0,"<0,10",1,0,2015
+23,4,Robot radical prostatectomy,453,Based on protocol advice,,,,,,4,,,,,,,,,2015
+24,4,Robot radical prostatectomy,382,Based on protocol advice,,,,9,0,0,,,,,,,1,,2015
+25,4,Robot radical prostatectomy,395,Anxiety,,T2c,0,,0,,,,0,,0,,1,,2013
+26,4,HIFU,399,Other,,"T2a  (a,b,c)",9,,3,,,,,,,,,,2016
+27,23,Open radical prostatectomy,396,Based on protocol advice,,T3,,,0,,,,,0,,,,,2009
+28,1,External beam radiotherapy,665,Based on protocol advice,,T2c,,,0,,,,,,,,,,2012
+29,4,Open radical prostatectomy,396,Based on protocol advice,,T3,,0,,3,,,0,,,,1,,2017
+30,4,External beam radiotherapy,435,Based on protocol advice,,T2c,,,4,,,,,,,,,,2015
+31,3,Died,376,Other,,T2c,0,9,,0,,,,0,,,1,,2012
+32,4,Watchful waiting,503,Anxiety,,,,9,,0,,,0,,,,,,2017
+33,4,Robot radical prostatectomy,413,N/A,,T2c,,9,,4,,,0,,,,1,1,2014
+34,4,Robot radical prostatectomy,477,Based on protocol advice,,T3,,,,4,,,,0,,,2,,2008
+35,5,Watchful waiting,380,N/A,,T3,,0,,,,,,,0,,,,2014
+36,4,Watchful waiting,455,Based on protocol advice,,T2c,,,3,,,,0,,0,,,,2013
+37,7,External beam radiotherapy,402,N/A,,,,,,,,,0,,0,,1,,2015
+38,5,Open radical prostatectomy,434,N/A,,T2c,,0,3,,,,1,0,1,,1,0,2016
+39,6,Open radical prostatectomy,407,Based on protocol advice,,T3,,,0,,60,6,,0,,,,0,2012
+40,2,Robot radical prostatectomy,431,Based on protocol advice,,,9,,3,,,,,,,,,,2017
+41,15,Lost to FU,459,Other,,,,9,,,,,,0,,,,,2009
+42,8,LHRH Agonists,756,Based on protocol advice,,,,9,,,,,0,0,,,1,0,2012
+43,2,External beam radiotherapy,372,Based on protocol advice,,,9,,0,,50 ml,,,,,,,,2009
+44,3,Other or unknown treatment,202,Based on protocol advice,,"T2a  (a,b)",9,,3,,,,,,,"0,03",1,,2010
+45,13,Brachytherapy Low-dose rate,453,Lost to FU,,,,,3,,,,,,,,,0,2012
+46,4,External beam radiotherapy,399,N/A,,T2c,0,,,0,,,,,,,1,,2011
+47,4,External beam radiotherapy,477,Based on protocol advice,,"T2a  (a,b,c)",,,,3,,,0,,,,,0,2011
+48,15,Laparoscopic Radical Prostatectomy,380,Other,,,0,9,0,4,,,1,0,0,,1,,2011
+49,15,Watchful waiting,386,On request,,T2c,,,,,,,0,,1,,,0,2012
+50,3,Robot radical prostatectomy,533,Based on protocol advice,,,,,3,4,,,,1,,,1,0,2017
+51,5,Open radical prostatectomy,474,Based on protocol advice,,,,,,,,,0,,,,1,,2012
+52,2,Brachytherapy Low-dose rate,431,N/A,,,,,,0,,,,,,"<0,10",,,2016
+53,4,Lost to FU,399,Other,,,0,9,3,0,,,,,,,1,,2015
+54,6,Died,502,Based on protocol advice,,,0,,,,,,0,,,,,0,2010
+55,2,Open radical prostatectomy,499,Based on protocol advice,,,9,,3,,,,,,,,1,,2012
+56,9,Lost to FU,453,Based on protocol advice,,,,,3,0,,,,,0,,1,,2017
+57,9,Brachytherapy dose rate unknown,477,Other,,T2c,,0,,,,,,,,,1,,2011
+58,6,Brachytherapy Low-dose rate,429,Based on protocol advice,,,0,0,4,,60,,,,,,1,0,2017
+59,8,Open radical prostatectomy,392,Based on protocol advice,,,,,,,,,,,,,,,2012
+60,2,Robot radical prostatectomy,476,Based on protocol advice,,T3,,9,,,,10,,,,,,,2014
+61,2,Lost to FU,597,Lost to FU,,T2c,,,,0,,,,,,0.01,,,2012
+62,5,Brachytherapy High dose rate,385,Other,,,,,0,0,,,,,0,,,,2012
+63,1,Robot radical prostatectomy,420,Other,,,,,4,4,40,,,,,,1,,2014
+64,12,Brachytherapy High dose rate,415,Other,,T2c,0,,,0,,,,,,,,,2017
+65,4,Brachytherapy Low-dose rate,483,Other,,,,,0,4,,,,,,"0,02",,,2016
+66,9,Robot radical prostatectomy,440,Other,,,,,,,,,,,,,1,,2015
+67,5,Brachytherapy High dose rate,431,Based on protocol advice,,,,,0,,,,,,,,1,0,2017
+68,4,Brachytherapy dose rate unknown,491,Based on protocol advice,,,,,0,,,,0,,,,1,,2015
+69,3,External beam radiotherapy,170,Based on protocol advice,,T3,9,0,3,,,,0,,,"0,04",1,,2013
+70,4,External beam radiotherapy,426,Based on protocol advice,,,,,0,0,,,,,,,,,2015
+71,4,Robot radical prostatectomy,468,Based on protocol advice,,,9,,,,,,,,,,,0,2016
+72,5,Robot radical prostatectomy,414,Other,,,,9,,,,,0,,0,,,,2017
+73,7,Robot radical prostatectomy,402,Based on protocol advice,,,,,3,0,,,,,,,1,0,2013
+74,4,Watchful waiting,435,N/A,,,,0,3,0,,,,0,,,,,2012
+75,9,External beam radiotherapy,597,N/A,,,,0,,0,,,,0,0,,1,1,2013
+76,2,Other or unknown treatment,414,Based on protocol advice,,T2c,0,,,,,,0,,,,1,,2010
+77,2,Robot radical prostatectomy,372,Based on protocol advice,,,9,9,3,3,,2,,,,,1,,2016
+78,3,External beam radiotherapy,468,Based on protocol advice,,,0,9,0,3,,,,0,1,,1,,2011
+79,11,External beam radiotherapy,372,Based on protocol advice,,,,9,,3,,,,,0,,,,2011
+80,4,Laparoscopic Radical Prostatectomy,465,Based on protocol advice,,T2c,0,,4,,,,,0,,,,0,2014
+81,1,Brachytherapy Low-dose rate,383,Lost to FU,,,,,0,0,,,,0,,,1,,2016
+82,4,Died,406,Based on protocol advice,,,9,,,,,,,0,1,"0,02",1,,2014
+83,4,On request,396,Based on protocol advice,,,,0,3,4,,,,0,1,,,,2015
+84,11,Brachytherapy High dose rate,459,Anxiety,,T2c,,,0,,,,1,,1,,,,2014
+85,4,Open radical prostatectomy,397,Other,,,,,0,,,,,0,,,2,,2015
+86,17,Robot radical prostatectomy,379,Based on protocol advice,,T2c,,0,3,4,,,1,0,0,"0,1",1,,2015
+87,18,External beam radiotherapy,467,Based on protocol advice,,,0,,,,,,,,,,,,2010
+88,12,Robot radical prostatectomy,399,N/A,,,,,0,0,,,,0,,,2,0,2011
+89,1,External beam radiotherapy,415,Other,,,,0,,4,,,,,,,,,2013
+90,4,Robot radical prostatectomy,448,Other,,,9,9,,3,,,,,,,,,2012
+91,4,Robot radical prostatectomy,444,Based on protocol advice,,,,,,,,,,0,,,1,0,2013
+92,7,External beam radiotherapy,426,N/A,,,,,3,3,,,,0,,,,,2013
+93,22,Other or unknown treatment,404,Based on protocol advice,,,9,,,3,47,,,0,,,,,2014
+94,1,Robot radical prostatectomy,430,Based on protocol advice,,,9,,,,,,,,,,,,2015
+95,15,Watchful waiting,447,On request,,,,,3,,,,,,,,1,,2013
+96,4,Robot radical prostatectomy,390,N/A,,T3,,,,4,,,,,0,,,,2015
+97,20,Robot radical prostatectomy,459,Based on protocol advice,,T2c,,,3,0,,,,,,,1,,2017
+98,9,On request,546,N/A,,,,,,3,,,,,0,,2,,2010
+99,7,Laparoscopic Radical Prostatectomy,389,Based on protocol advice,,,,,0,0,,,,,,,1,,2016
+100,4,Lost to FU,423,Based on protocol advice,,T2c,,,0,3,,,,1,,,,0,2016
+101,5,Robot radical prostatectomy,476,N/A,,T2c,,,0,4,,,,0,,"0,1",1,,2016
+102,5,Robot radical prostatectomy,432,Other,,,,,,3,,,,,0,,1,,2017
+103,5,External beam radiotherapy,441,Based on protocol advice,,,,,,0,49,,,,0,,,,2013
+104,15,HIFU,374,Based on protocol advice,,T3,0,,0,0,,,,,0,,,0,2013
+105,11,Other or unknown treatment,373,Other,,,9,9,,5,,,,0,,,,,2012
+106,11,Watchful waiting,455,N/A,,T2c,,,0,3,NA,,,,,"<0,01",,,2014
+107,9,External beam radiotherapy,396,Based on protocol advice,,,,,0,0,,,,,,,2,,2013
+108,6,Open radical prostatectomy,546,Based on protocol advice,,,9,,,,,,,,,,1,,2016
+109,8,Open radical prostatectomy,377,N/A,,"T2b  (a,b,c)",,,,,,,,,,,,0,2009
+110,3,Watchful waiting,428,Based on protocol advice,,,,0,3,3,,,,0,,,1,,2015
+111,4,Laparoscopic Radical Prostatectomy,483,Based on protocol advice,,,,,,,,,,,,,1,0,2012
+112,4,Robot radical prostatectomy,435,Other,,,9,,0,0,,,,,0,,1,,2016
+113,18,Laparoscopic Radical Prostatectomy,460,N/A,,,9,,4,4,,,,,0,,1,0,2007
+114,4,Open radical prostatectomy,414,Based on protocol advice,,T2c,,,0,,,,,,,,,,2012
+115,7,Robot radical prostatectomy,438,Other,,,,,,,,4,,,,,1,,2017
+116,7,Laparoscopic Radical Prostatectomy,566,Other,,,,,0,,,2,,,,,,,2012
+117,4,Watchful waiting,419,On request,,,9,,0,,,,,,0,,,,2014
+118,12,Lost to FU,439,Based on protocol advice,,T3,,,,,,,0,,,"0,01",,,2017
+119,8,On request,383,Based on protocol advice,,T3,,,,,,,1,,0,,,,2011
+120,12,Robot radical prostatectomy,460,N/A,,,,9,,,,,0,,,,1,,2009
+121,12,Lost to FU,415,Based on protocol advice,,T2c,,9,,4,,,,,0,"0,04",1,,2012
+122,3,Watchful waiting,396,Based on protocol advice,,,,,,,,,,,,,1,,2007
+123,4,Robot radical prostatectomy,353,Based on protocol advice,447,T3,,,3,0,,,,,,0,1,,2015
+124,1,Died,410,Based on protocol advice,,,,,0,4,,,,,,,,,2016
+125,18,External beam radiotherapy,470,Based on protocol advice,,,,,,4,,,,,,0.01,2,,2017
+126,4,Laparoscopic Radical Prostatectomy,428,Other,,,0,,3,4,,,0,,,,,,2017
+127,7,Watchful waiting,438,Lost to FU,,T2c,,,3,,,,0,,0,,,,2014
+128,8,External beam radiotherapy,390,Anxiety,,,0,,0,,,,,0,,,1,,2017
+129,4,Lost to FU,395,Other,,,,,,3,,,,,,,1,,2014
+130,4,External beam radiotherapy,380,Based on protocol advice,,T2c,,,3,3,,,,,,0.01,,,2015
+131,4,Brachytherapy Low-dose rate,503,Based on protocol advice,,,9,,,,,,0,,,,2,,2013
+132,4,External beam radiotherapy,533,Other,,,,,0,0,,,,0,,"<0,04",,0,2013
+133,5,Robot radical prostatectomy,455,Based on protocol advice,,,,,,4,,,,0,,,2,0,2016
+134,1,Laparoscopic Radical Prostatectomy,387,Other,,T2c,,,,0,,,,,,"0,04",1,,2016
+135,12,Robot radical prostatectomy,387,Based on protocol advice,,T2c,,,,0,37,,,,,,,,2013
+136,8,Other or unknown treatment,375,Based on protocol advice,,T2c,,0,3,3,,,,,,,,,2012
+137,7,Robot radical prostatectomy,371,Anxiety,432,T2c,,,,,,,1,,,,,,2016
+138,3,Laparoscopic Radical Prostatectomy,381,Lost to FU,,"T2a  (a,b,c)",,9,,0,,,,,,,1,,2014
+139,16,Robot radical prostatectomy,373,N/A,,,9,,0,0,,,,0,,0.008,1,,2010
+140,6,Robot radical prostatectomy,386,N/A,,,9,,3,,,,,0,,,,,2012
+141,5,Watchful waiting,389,Based on protocol advice,,T3,,,,4,,,,,,"0,1",,,2011
+142,9,External beam radiotherapy,387,Based on protocol advice,,,0,,0,4,,,,,,,2,,2015
+143,6,Laparoscopic Radical Prostatectomy,431,Other,,,,9,3,,,,,,,,,,2014
+144,3,Brachytherapy High dose rate,386,Lost to FU,,,,,4,,,,,0,,,1,,2011
+145,5,Watchful waiting,428,Based on protocol advice,,,,,0,4,,,,0,,,,,2014
+146,5,External beam radiotherapy,453,Anxiety,,,,,0,4,,,,,,,1,,2016
+147,2,Brachytherapy Low-dose rate,502,Based on protocol advice,,,,,,0,,,,0,,,1,,2009
+148,4,Other or unknown treatment,364,Based on protocol advice,,,,9,,,,,,0,1,,1,,2013
+149,10,External beam radiotherapy,459,N/A,,,,,,,,,,,0,,,,2013
+150,4,Laparoscopic Radical Prostatectomy,382,Based on protocol advice,,T2c,9,,3,,,,,9,,,,,2012
+151,1,Lost to FU,420,Based on protocol advice,,T3,,,,3,,,,,,,1,,2014
+152,11,Robot radical prostatectomy,470,Other,,,9,9,,4,,,,,0,,,,2013
+153,16,Robot radical prostatectomy,423,Anxiety,,T3,,0,,4,,,0,0,,,1,,2008
+154,5,External beam radiotherapy,469,Based on protocol advice,,,,,3,,,,,,0,,1,,2013
+155,6,External beam radiotherapy,462,Based on protocol advice,,,9,,4,,,,,,,,1,,2017
+156,12,Open radical prostatectomy,373,Other,,T3,,,,,,,,,0,,,,2012
+157,5,Laparoscopic Radical Prostatectomy,387,Based on protocol advice,,,,9,,4,,,0,,0,,1,,2013
+158,13,Brachytherapy Low-dose rate,406,Based on protocol advice,,T3,,,3,0,,,,,0,,1,,2013
+159,2,External beam radiotherapy,438,Based on protocol advice,,,,,3,,,,,1,,,1,0,2013
+160,12,Open radical prostatectomy,439,Based on protocol advice,,T2c,,,3,4,,,,,,,1,,2015
+161,5,External beam radiotherapy,469,N/A,,,,,0,,,,,0,1,,2,,2014
+162,12,External beam radiotherapy,380,Based on protocol advice,,,,,,,,,,,,0,,,2017
+163,16,Robot radical prostatectomy,504,Based on protocol advice,,T3,0,0,3,,,,,9,,,,,2014
+164,11,Watchful waiting,396,Lost to FU,,,,9,,0,,,,,0,0.03,2,,2016
+165,4,External beam radiotherapy,401,Based on protocol advice,,,,,0,,,,,,0,,2,,2016
+166,15,Antiandrogens,404,Anxiety,,,,,0,4,49,,,,0,,1,9,2008
+167,12,Robot radical prostatectomy,379,Based on protocol advice,,,,,0,0,48,,0,,1,,,,2017
+168,11,Robot radical prostatectomy,438,Based on protocol advice,,T3,,,0,3,,,,,0,,,0,2011
+169,4,Brachytherapy Low-dose rate,405,Anxiety,,,,,0,,,,,,,,,,2009
+170,4,Robot radical prostatectomy,468,Based on protocol advice,,"T2a  (a,b,c)",,9,0,4,,,,,0,"0,01",,1,2017
+171,9,Other or unknown treatment,379,N/A,,,,,0,2,,,,,,,2,,2016
+172,3,Lost to FU,435,Other,,,,,4,,,,,,0,<0.05,,,2013
+173,14,Laparoscopic Radical Prostatectomy,462,N/A,,,9,,,0,,,,,0,,1,,2016
+174,3,Lost to FU,377,Anxiety,,,0,,,0,,,,,,,,,2015
+175,2,Other or unknown treatment,404,Based on protocol advice,,"T2a  (a,b,c)",,,,4,,,,,1,,,,2014
+176,4,Laparoscopic Radical Prostatectomy,665,Other,,T3,9,,,0,,,,0,,,,,2012
+177,6,Laparoscopic Radical Prostatectomy,406,Other,,"T2a  (a,b)",,0,3,,,,,,0,,,,2014
+178,4,Watchful waiting,460,Lost to FU,,,0,0,3,0,,,,1,,<0.1,,,2016
+179,4,Brachytherapy High dose rate,396,N/A,,"T2a  (a,b,c)",,0,0,0,,,,,,,,,2015
+180,4,External beam radiotherapy,393,Anxiety,,,,9,0,3,,,,,0,,,,2013
+181,7,Brachytherapy dose rate unknown,469,Based on protocol advice,,,,,3,,,,,0,0,,1,,2016
+182,4,Robot radical prostatectomy,483,N/A,,,,,,,,,,,0,,,,2017
+183,9,Robot radical prostatectomy,454,Other,,T3,,,0,,,,,,,,1,,2010
+184,17,Lost to FU,385,Based on protocol advice,431,,,,3,4,,4,,,,,,,2013
+185,9,External beam radiotherapy,383,Based on protocol advice,,,0,,3,,,,,,,,1,,2016
+186,1,External beam radiotherapy,389,N/A,,,,,0,0,,,,,,,1,,2008
+187,3,Laparoscopic Radical Prostatectomy,533,Based on protocol advice,,,9,9,0,3,,,,,,,2,9,2015
+188,3,Laparoscopic Radical Prostatectomy,503,Lost to FU,,,,9,3,,,,,,,,,,2013
+189,10,Open radical prostatectomy,469,Based on protocol advice,,,,,,3,,,,,,0,1,0,2015
+190,4,Lost to FU,453,Based on protocol advice,,,,9,4,,,,,,,0.01,,0,2016
+191,4,Antiandrogens,415,Based on protocol advice,,"T2a  (a,b,c)",,,0,,33,,,,0,,1,,2016
+192,4,Brachytherapy dose rate unknown,510,Based on protocol advice,,,,,3,,,,,,0,,,,2017
+193,11,Watchful waiting,465,Based on protocol advice,,,,9,,,,,,,,,,,2017
+194,4,Robot radical prostatectomy,376,Based on protocol advice,,,,9,,0,,6,,,0,"<0,04",,,2012
+195,5,Watchful waiting,455,Based on protocol advice,462,,,,0,,,,,,,,,,2011
+196,3,Robot radical prostatectomy,420,Lost to FU,,,,,,,53,,,,0,,1,,2016
+197,14,Watchful waiting,385,Based on protocol advice,,,9,,,,,,,,,,1,,2016
+198,6,Robot radical prostatectomy,397,On request,,,,,3,0,,,,0,,,,,2013
+199,4,Open radical prostatectomy,434,Based on protocol advice,,,,,0,,,,,,,0.04,1,,2016
+200,11,External beam radiotherapy,428,Based on protocol advice,,T2c,,,0,4,,,,,,,2,,2009
+201,19,Robot radical prostatectomy,428,Other,,,,,3,,,,,,0,,1,,2014
+202,5,Lost to FU,530,Based on protocol advice,,T3,,,4,0,,,,,,,2,,2009
+203,1,Open radical prostatectomy,415,Based on protocol advice,,,0,9,,4,,3,0,,,,,,2017
+204,10,Lost to FU,430,Based on protocol advice,,,9,,,,,,,,9,,,,2011
+205,4,Robot radical prostatectomy,386,N/A,,,,,,,,12,1,,,,,,2014
+206,2,HIFU,448,Lost to FU,,,,,3,0,43,12,,,,,1,,2013
+207,11,External beam radiotherapy,371,Based on protocol advice,,,0,,0,4,,,,,,,,,2007
+208,9,Watchful waiting,429,Based on protocol advice,,T2c,0,,0,4,,,,0,,,2,,2008
+209,4,Other or unknown treatment,374,Based on protocol advice,,,,,3,0,,,,,,0.01,1,,2014
+210,1,Robot radical prostatectomy,434,Based on protocol advice,,,,9,3,0,,,,,,,1,,2016
+211,18,Brachytherapy High dose rate,385,N/A,,"T2a  (a,b)",,,0,0,46,,,,0,,,,2014
+212,5,Robot radical prostatectomy,499,Based on protocol advice,,,,,0,,,,,,,,,,2016
+213,10,Lost to FU,414,N/A,,T2c,,,3,,61,,,0,,,,,2011
+214,5,Robot radical prostatectomy,455,Lost to FU,,,,,,,,,,,,,1,,2010
+215,7,Open radical prostatectomy,465,Based on protocol advice,,,0,,,3,,,0,0,,,,,2015
+216,21,Laparoscopic Radical Prostatectomy,380,Based on protocol advice,,,,0,3,0,,,,,,,,,2014
+217,4,Open radical prostatectomy,530,Based on protocol advice,,,,9,0,,,,1,,,"<0,01",,,2016
+218,2,External beam radiotherapy,399,Based on protocol advice,,,,,3,0,,,0,,,,1,,2013
+219,4,Other or unknown treatment,480,Based on protocol advice,,T2c,9,0,0,,,,,,,,1,,2014
+220,4,Robot radical prostatectomy,387,Other,,,0,,4,4,,,,,,,,,2009
+221,4,Open radical prostatectomy,406,Based on protocol advice,,T2c,,0,3,,,,0,0,,,,,2011
+222,4,Robot radical prostatectomy,438,Based on protocol advice,,T3,,,4,0,,,,,,,,,2016
+223,4,Robot radical prostatectomy,509,Other,,,,,,,61,,,,,,1,0,2012
+224,17,Brachytherapy Low-dose rate,400,Based on protocol advice,,,,,3,3,,,,,,"0,1",,,2015
+225,8,Lost to FU,362,Based on protocol advice,,T2c,,,4,,,,,,,,1,,2009
+226,4,Died,468,Based on protocol advice,,"T2a  (a,b,c)",,,0,,,,,0,0,,1,,2014
+227,4,Other or unknown treatment,456,Based on protocol advice,,T2c,,9,0,,,,,,,,1,0,2012
+228,12,Watchful waiting,393,Lost to FU,,T2c,,,0,3,61,,,,,,,0,2017
+229,11,Robot radical prostatectomy,483,Other,,,,,0,0,,,,,,,,,2017
+230,4,Robot radical prostatectomy,491,Based on protocol advice,,T2c,,,3,,40 ml,,,,,,1,,2010
+231,4,Open radical prostatectomy,756,Based on protocol advice,,,0,,,3,,,,,,,1,0,2015
+232,5,Robot radical prostatectomy,428,On request,,,0,,,,60,,,,,,,0,2013
+233,4,Robot radical prostatectomy,477,Based on protocol advice,,T2c,9,9,,,53,,,,,,,,2010
+234,5,Lost to FU,406,Based on protocol advice,,,,,3,,,,,,0,"0,1",,0,2014
+235,5,Open radical prostatectomy,510,Other,,,9,,,4,,,,,0,,,,2017
+236,3,External beam radiotherapy,533,Based on protocol advice,,,0,,0,3,,,,,,,1,,2016
+237,4,Watchful waiting,405,Other,,T3,,,3,,,,,,0,,1,,2008
+238,4,Died,372,Other,,,,0,3,4,,,1,,,,2,,2015
+239,3,External beam radiotherapy,392,Other,,,0,9,0,4,,,,,0,,,,2011
+240,5,Died,456,Based on protocol advice,,,,,,,,,,0,1,,,,2014
+241,13,Other or unknown treatment,428,N/A,,"T2a  (a,b,c)",9,,,5,,,,,,,,,2015
+242,4,External beam radiotherapy,419,Anxiety,,,9,,0,,40,,,,,,,,2016
+243,3,Brachytherapy High dose rate,425,Based on protocol advice,,,,,,0,,,0,,0,0,,0,2013
+244,4,On request,398,Other,,T3,9,,,0,,,0,,,,,9,2012
+245,19,External beam radiotherapy,414,Based on protocol advice,,,,,,4,,2,,,,,2,,2015
+246,1,Open radical prostatectomy,530,Other,,,0,,0,0,,,0,,,,,0,2012
+247,4,Brachytherapy Low-dose rate,474,Other,,,,,3,,,,,,0,,,,2016
+248,14,Lost to FU,413,Based on protocol advice,,,,9,0,3,,,,,0,,1,,2013
+249,4,Watchful waiting,428,Based on protocol advice,,,0,,,,,,,,0,,,,2015
+250,4,Watchful waiting,441,Based on protocol advice,,T2c,,,3,,NA,,0,,,,,,2013
+251,1,Robot radical prostatectomy,385,Other,,T2c,,,0,0,,,,,,0,1,,2012
+252,1,Robot radical prostatectomy,447,Based on protocol advice,,,,,,0,,,0,,,,1,0,2009
+253,4,Died,440,N/A,,T3,,,4,,,,,0,,,2,,2011
+254,13,Watchful waiting,434,Other,,,,,,3,30,,1,,0,,1,,2017
+255,15,External beam radiotherapy,170,Based on protocol advice,,,,,,4,,,0,,,,1,,2014
+256,17,External beam radiotherapy,465,Lost to FU,,,,,3,,,,,,,,,,2016
+257,2,Open radical prostatectomy,400,N/A,,T2c,,,,0,,,,,,,,,2014
+258,5,Brachytherapy Low-dose rate,699,Based on protocol advice,,,,0,,3,,,0,,0,"0,04",,,2015
+259,13,External beam radiotherapy,390,Based on protocol advice,,,,9,0,0,,,,0,,,1,,2014
+260,12,Lost to FU,460,Other,,,,9,,3,,,,0,1,,,9,2012
+261,2,Brachytherapy Low-dose rate,459,Based on protocol advice,,T2c,9,,4,,,,,,,,2,,2008
+262,5,Open radical prostatectomy,426,Based on protocol advice,,,,,3,3,,,,,,,2,,2011
+263,9,Robot radical prostatectomy,459,N/A,,,0,,0,0,,,,,0,,1,0,2015
+264,12,Robot radical prostatectomy,395,Based on protocol advice,,,,9,,,,,,,,,2,,2011
+265,8,Robot radical prostatectomy,402,Based on protocol advice,,,,,,4,,,1,,,,,,2014
+266,5,Other or unknown treatment,499,Based on protocol advice,,,0,9,,,49,,,,1,,1,,2012
+267,4,Brachytherapy High dose rate,413,Other,,T2c,9,,,0,,,0,,0,,1,,2017
+268,3,Laparoscopic Radical Prostatectomy,480,Anxiety,,,0,9,0,0,,,0,,0,,1,,2010
+269,7,Laparoscopic Radical Prostatectomy,431,Anxiety,,T2c,0,,,3,,,,,,,1,,2009
+270,2,External beam radiotherapy,501,N/A,,T2c,,,0,,20 ml,,,0,1,,1,,2014
+271,13,Robot radical prostatectomy,202,Based on protocol advice,,,,0,,,,,,0,,,1,,2015
+272,3,Brachytherapy High dose rate,467,Based on protocol advice,,,,,,,,,,0,,,,0,2012
+273,4,Robot radical prostatectomy,509,Other,428,"T2a  (a,b,c)",0,,3,4,,,,,0,"0,1",1,,2017
+274,3,Brachytherapy dose rate unknown,395,Lost to FU,,,,0,0,,,,,0,,,,,2017
+275,4,Robot radical prostatectomy,407,N/A,,,,,,,,,,0,,0,1,,2010
+276,4,Watchful waiting,398,On request,,T2c,9,,,3,,,,,,"0,01",,0,2011
+277,3,External beam radiotherapy,395,Lost to FU,,T2c,0,,,0,,,,,,,1,,2011
+278,9,Watchful waiting,420,Other,,,,,,,35,3,,,,"0,1",2,,2010
+279,4,Antiandrogens,389,Based on protocol advice,,"T2a  (a,b)",,,,4,,,,,,,1,,2012
+280,11,External beam radiotherapy,377,N/A,485,,0,,,,,,,0,,,2,,2009
+281,8,Other or unknown treatment,459,Based on protocol advice,,,,9,,,,,1,,0,,,,2015
+282,8,On request,459,Based on protocol advice,,,,,3,,,,,,,,1,0,2008
+283,7,Laparoscopic Radical Prostatectomy,391,Based on protocol advice,,,,,,,,,,,,,2,0,2012
+284,9,Brachytherapy Low-dose rate,480,N/A,,,,,,,,5,0,,,,,,2011
+285,4,Other or unknown treatment,398,Based on protocol advice,,,,,,,,,1,0,,0.01,,,2017
+286,10,Open radical prostatectomy,419,Based on protocol advice,,,9,,0,,,,,0,0,,1,,2017
+287,3,Watchful waiting,414,Other,,,9,,3,,,,0,,,,1,,2017
+288,1,Robot radical prostatectomy,365,Based on protocol advice,,,,,0,0,,,,,,,,,2015
+289,12,Died,533,Based on protocol advice,,T2c,,9,,0,,,,,,,1,0,2015
+290,8,Died,440,Other,,"T2b  (a,b,c)",,9,0,,,,,,,,1,0,2014
+291,2,External beam radiotherapy,501,Based on protocol advice,,,,,,4,,,,0,0,,1,,2017
+292,15,Robot radical prostatectomy,444,Anxiety,,"T2a  (a,b,c)",,,0,,,,,,,,,,2012
+293,5,Open radical prostatectomy,466,Based on protocol advice,,,,,3,,,2,,0,,,,0,2008
+294,4,Watchful waiting,380,N/A,,,,,,,,,,,,,2,,2015
+295,9,Robot radical prostatectomy,391,Based on protocol advice,,T2c,0,,,4,41,,0,,,,,,2014
+296,5,Brachytherapy Low-dose rate,428,Other,,,,,,,,,,,,,,,2015
+297,13,Robot radical prostatectomy,367,Other,,,,,4,,,,1,,,,,,2010
+298,13,Brachytherapy dose rate unknown,415,Based on protocol advice,,,,,3,3,,6,,,,,1,0,2014
+299,11,Robot radical prostatectomy,466,Based on protocol advice,,,,0,,0,,,0,,,"0,1",1,,2015
+300,11,Open radical prostatectomy,474,Based on protocol advice,,,,,3,,,,,,,"0,1",,,2016
+301,11,Robot radical prostatectomy,390,Based on protocol advice,,,,,3,4,,,,,,,,,2013
+302,21,Laparoscopic Radical Prostatectomy,1493,Based on protocol advice,,,,,0,,,,,,,,1,,2009
+303,11,Watchful waiting,379,Other,,,9,0,3,4,,,,,,,1,,2017
+304,12,Other or unknown treatment,1493,Other,,,,,,0,,,,,,,,,2009
+305,4,Robot radical prostatectomy,396,Other,,,,,0,,,,,,0,,1,,2010
+306,4,On request,393,Based on protocol advice,,,9,,,0,,,0,,0,,,,2015
+307,3,Robot radical prostatectomy,401,Based on protocol advice,,T2c,,0,0,4,,,,,,,2,0,2017
+308,4,Robot radical prostatectomy,407,N/A,,,,,,0,,,,,,0.01,2,0,2013
+309,12,Robot radical prostatectomy,665,Based on protocol advice,,,0,9,0,3,,,0,,0,,1,,2010
+310,10,Robot radical prostatectomy,453,Other,,T2c,0,0,0,0,,,,,,,,,2009
+311,4,Watchful waiting,420,Based on protocol advice,,,0,0,,,,,,,,,1,,2012
+312,4,Watchful waiting,386,Based on protocol advice,,,,,,,,,,,,,1,,2014
+313,4,Brachytherapy Low-dose rate,389,Based on protocol advice,,,9,,0,,,,,,0,,,,2010
+314,2,Lost to FU,367,N/A,,T2c,0,,,3,,,,0,,,1,,2013
+315,12,External beam radiotherapy,375,Based on protocol advice,,T3,,,,5,,,,,,,,0,2017
+316,14,External beam radiotherapy,362,Based on protocol advice,,,,,,0,,,,0,0,,,0,2013
+317,3,Watchful waiting,428,Based on protocol advice,,T2c,0,,0,3,,,0,0,0,,,,2017
+318,5,Open radical prostatectomy,440,Anxiety,,,,0,3,0,,,,,,,1,,2013
+319,4,Robot radical prostatectomy,362,Other,,,0,,0,4,,,,0,,,1,0,2014
+320,8,Died,665,N/A,,,9,,4,0,,,,,0,,,,2015
+321,1,External beam radiotherapy,397,Other,,,,,,4,,,,,,,1,,2017
+322,5,Laparoscopic Radical Prostatectomy,441,,,,,9,,0,,,,0,,,,,2012
+323,3,External beam radiotherapy,415,Anxiety,,T2c,9,0,3,0,,,,,1,,,,2016
+324,8,Open radical prostatectomy,397,Based on protocol advice,,T2c,,9,0,3,,,,,1,"0,04",,,2012
+325,8,Open radical prostatectomy,430,Based on protocol advice,,T2c,0,0,3,,,,0,0,,,,0,2010
+326,4,External beam radiotherapy,353,Based on protocol advice,,,,9,,,,,,,0,,1,,2011
+327,8,Other or unknown treatment,363,Based on protocol advice,,,0,,,,,,,,,"0,04",,,2011
+328,13,Open radical prostatectomy,362,Based on protocol advice,,,,,0,,,,0,0,,,2,0,2010
+329,4,Robot radical prostatectomy,438,Other,,,,,,0,,,,0,,,2,,2012
+330,4,Other or unknown treatment,455,Lost to FU,,,,,,4,,,,,,,1,0,2015
+331,4,Watchful waiting,378,Based on protocol advice,,,,9,,,,,,,,,,,2016
+332,2,Lost to FU,455,N/A,,,0,,0,,,,9,0,,,1,,2008
+333,10,Laparoscopic Radical Prostatectomy,390,Based on protocol advice,,,,,,0,,,0,,,,,0,2013
+334,5,Open radical prostatectomy,432,Other,,,0,,4,,,,,,0,,1,,2017
+335,8,External beam radiotherapy,435,Other,,,,,,3,,,0,,,,,,2016
+336,6,External beam radiotherapy,382,Based on protocol advice,,,,,3,,,,0,,,0.01,1,,2015
+337,5,Open radical prostatectomy,456,Based on protocol advice,,,,0,,,,,,0,,,,,2009
+338,5,Watchful waiting,387,Based on protocol advice,,,,,,0,,,,,,,,,2015
+339,4,External beam radiotherapy,462,Based on protocol advice,,,,,4,3,NA,,,,,,1,,2015
+340,6,Watchful waiting,419,Other,,,,9,0,,,,0,,,,2,,2013
+341,11,Laparoscopic Radical Prostatectomy,402,Based on protocol advice,,,,,3,,,,,,0,,,,2014
+342,3,Robot radical prostatectomy,365,Based on protocol advice,,T2c,,,,0,,,0,0,,,1,1,2017
+343,5,External beam radiotherapy,378,Based on protocol advice,,,,,,,,,,,,,2,,2010
+344,17,External beam radiotherapy,397,Based on protocol advice,,T2c,,0,4,,33,,,,,,,,2009
+345,10,Open radical prostatectomy,375,N/A,,,,,,0,,,,,,,1,,2013
+346,4,Robot radical prostatectomy,546,Based on protocol advice,,T2c,,,,4,,,,,,,,,2013
+347,7,Open radical prostatectomy,406,Based on protocol advice,,,,,,0,,,,,0,,1,0,2017
+348,2,External beam radiotherapy,597,Based on protocol advice,,T2c,,,0,4,47,,,,,,1,,2016
+349,12,Died,460,Based on protocol advice,,,0,,0,,,,,,0,,,0,2010
+350,4,Robot radical prostatectomy,381,On request,,T2c,,,3,,,,,,,,1,,2015
+351,6,Laparoscopic Radical Prostatectomy,476,Based on protocol advice,,,,,,,,,,,1,,2,,2011
+352,4,Watchful waiting,406,Based on protocol advice,,,,,3,5,,,0,,,,2,0,2015
+353,4,Watchful waiting,467,Based on protocol advice,,,0,,3,,,,,0,,,,,2014
+354,5,External beam radiotherapy,434,Based on protocol advice,,"T2a  (a,b,c)",,0,,,,,,,,,1,0,2015
+355,5,Brachytherapy dose rate unknown,385,N/A,,T2c,,,3,,,,,0,,,2,,2011
+356,7,Robot radical prostatectomy,374,Based on protocol advice,,"T2a  (a,b,c)",9,,,,,,0,0,,0.01,,,2009
+357,1,External beam radiotherapy,434,On request,,T3,0,,0,0,,,1,,,0,,,2010
+358,4,LHRH Agonists,371,Based on protocol advice,,"T2b  (a,b,c)",,,0,3,,,,0,,,,,2013
+359,11,Other or unknown treatment,415,Other,,T3,,9,0,,,,,0,1,,1,,2017
+360,5,External beam radiotherapy,530,Other,,T2c,,,3,0,,,,,,"<0,10",,,2008
+361,4,Brachytherapy Low-dose rate,420,Based on protocol advice,,,,,3,0,,,,9,0,,,,2016
+362,17,Laparoscopic Radical Prostatectomy,428,Based on protocol advice,,,,,,,,,,,,,1,,2011
+363,16,Watchful waiting,431,Based on protocol advice,,,,,,4,,,,,1,,1,,2017
+364,15,Open radical prostatectomy,469,Anxiety,,,,9,0,4,,,1,0,,,,,2013
+365,4,Robot radical prostatectomy,393,Based on protocol advice,,T2c,,,0,0,,,1,,,,1,,2014
+366,5,Brachytherapy Low-dose rate,401,Other,,"T2b  (a,b)",0,,,0,,1,,,,,,,2014
+367,4,Laparoscopic Radical Prostatectomy,385,Based on protocol advice,413,,,0,,,41,,,,,,,,2015
+368,6,Robot radical prostatectomy,456,Based on protocol advice,428,,,0,0,,,,,,,0,,,2015
+369,19,Other or unknown treatment,387,Based on protocol advice,,,,,0,3,,,,,0,0,,,2015
+370,7,Other or unknown treatment,546,Other,,T2c,9,,3,,,,,,0,,,,2009
+371,4,External beam radiotherapy,395,Other,,,,,0,0,,,,,,,,,2013
+372,5,Laparoscopic Radical Prostatectomy,375,Based on protocol advice,,"T2a  (a,b)",,,,0,,,,,,,1,0,2017
+373,4,Laparoscopic Radical Prostatectomy,404,Based on protocol advice,,,,,3,0,,,,0,,,,,2017
+374,6,External beam radiotherapy,434,Based on protocol advice,,T2c,,0,,,,,0,1,0,,1,,2012
+375,5,Robot radical prostatectomy,756,Other,,T3,,,,,,,,,,,,0,2011
+376,4,Open radical prostatectomy,401,Other,,T2c,,,3,,,,,,,,1,,2015
+377,4,External beam radiotherapy,1493,Based on protocol advice,,"T2b  (a,b,c)",,,,0,,,,,,,1,,2017
+378,9,Lost to FU,454,Based on protocol advice,,,,,0,0,,,0,,0,,,,2015
+379,1,Brachytherapy dose rate unknown,454,N/A,,,,9,4,,,,,0,,,1,,2011
+380,12,Laparoscopic Radical Prostatectomy,474,Based on protocol advice,,,,,0,,,,,,,"0,03",1,,2009
+381,10,Died,491,Based on protocol advice,,,,9,,4,,,,,,,,,2009
+382,13,Lost to FU,367,Based on protocol advice,,,0,,,,,,,,,,2,,2014
+383,4,Open radical prostatectomy,430,Based on protocol advice,,,0,,,,,,,0,,,,,2008
+384,10,External beam radiotherapy,501,Based on protocol advice,,,9,0,,4,,,,,,,1,,2008
+385,4,Brachytherapy Low-dose rate,402,Based on protocol advice,,,9,,,4,,,,,,,2,,2013
+386,3,Robot radical prostatectomy,756,Based on protocol advice,,"T2a  (a,b)",0,,,0,50,,,,0,,,,2017
+387,11,Robot radical prostatectomy,470,N/A,,"T2a  (a,b,c)",9,,3,0,60,,,,,,,,2015
+388,4,Watchful waiting,429,Based on protocol advice,,,,9,,,,,,0,,,1,,2011
+389,4,Lost to FU,353,Based on protocol advice,,,,,,,,,,0,0,,,,2010
+390,4,On request,420,Based on protocol advice,,,9,,4,0,,,0,,,,1,0,2012
+391,3,Robot radical prostatectomy,364,Other,,T2c,,,3,,,,,0,,,,,2017
+392,16,Robot radical prostatectomy,385,Based on protocol advice,,,,,4,,,,,,,,1,,2013
+393,11,On request,491,On request,,T2c,,,0,3,,,0,0,,,1,0,2017
+394,4,Lost to FU,432,Based on protocol advice,,,,,3,0,35,,,0,,,,0,2012
+395,7,Open radical prostatectomy,509,Based on protocol advice,,,9,,,,,,,,,,1,,2012
+396,2,Brachytherapy High dose rate,491,N/A,,,,9,0,4,,,,,,,,,2016
+397,7,Lost to FU,476,Based on protocol advice,,T2c,,0,0,,,,,,,,1,0,2016
+398,4,External beam radiotherapy,379,Based on protocol advice,,,,,,0,,,0,,,,1,,2013
+399,4,Watchful waiting,399,On request,,,,,,,,,,0,,,,0,2017
+400,4,Brachytherapy Low-dose rate,504,Based on protocol advice,,,,,4,4,,,,1,,,,0,2012
+401,4,Watchful waiting,499,Based on protocol advice,,,0,,,4,,,1,,,<0.05,,0,2017
+402,12,Robot radical prostatectomy,468,Based on protocol advice,,,0,,0,3,,,,,,,1,,2012
+403,4,Robot radical prostatectomy,392,Based on protocol advice,,T2c,9,,0,3,,,,0,,,,0,2011
+404,2,Brachytherapy High dose rate,453,Based on protocol advice,,,,9,3,0,,,,,,"0,01",,,2016
+405,4,Robot radical prostatectomy,386,Other,,,,0,3,,,,,,,,1,,2012
+406,3,Robot radical prostatectomy,377,Based on protocol advice,,,,9,,3,,,0,0,,,1,,2017
+407,5,External beam radiotherapy,499,N/A,,,0,,,0,,,0,0,,"<0,04",,,2016
+408,15,Watchful waiting,379,Based on protocol advice,,,,,,,,,,,,,,,2013
+409,7,External beam radiotherapy,428,N/A,,,9,,0,,,,,,,,,,2017
+410,11,Brachytherapy Low-dose rate,442,Anxiety,,,,0,0,0,55,,,,,,1,,2014
+411,2,Brachytherapy Low-dose rate,476,Based on protocol advice,,,,,3,,,,0,,,,,,2010
+412,4,Other or unknown treatment,665,Based on protocol advice,,,,,,,,,,,,,,,2016
+413,1,External beam radiotherapy,399,Based on protocol advice,,,,,,0,,,0,,0,,1,0,2015
+414,4,Laparoscopic Radical Prostatectomy,434,Other,,,9,9,,0,,,,,,,1,,2017
+415,3,Brachytherapy dose rate unknown,555,Other,485,,,9,3,3,,,,,1,,,,2007
+416,3,Open radical prostatectomy,387,N/A,,,,9,0,,,,,0,,0,,,2013
+417,13,Brachytherapy dose rate unknown,411,Based on protocol advice,,,,9,,4,,,,,,0.008,1,0,2017
+418,4,Died,555,Based on protocol advice,,,,9,3,4,,,,0,0,,,,2011
+419,8,Other or unknown treatment,414,Lost to FU,,T3,,9,0,3,,,,,0,"0,02",,,2016
+420,4,External beam radiotherapy,502,Other,,T2c,,,,4,,,1,,,"0,01",1,,2015
+421,6,Brachytherapy dose rate unknown,468,Based on protocol advice,,,,,3,,,,,0,,,1,0,2017
+422,3,External beam radiotherapy,477,Based on protocol advice,,T2c,9,9,3,,,,0,0,,,,,2009
+423,1,Laparoscopic Radical Prostatectomy,367,Other,,,0,,0,0,,,,,,,1,,2015
+424,10,Robot radical prostatectomy,501,Based on protocol advice,,,,,,,,,0,,,0,2,,2015
+425,4,External beam radiotherapy,439,Lost to FU,,,,,0,3,,,,,0,,1,,2008
+426,2,Robot radical prostatectomy,468,Based on protocol advice,,,9,,0,,,,,,,,,0,2015
+427,8,Watchful waiting,477,Lost to FU,,,,,,,,,1,,,,,,2013
+428,3,Robot radical prostatectomy,448,Based on protocol advice,,,9,9,,,,,0,,0,,1,0,2013
+429,9,Brachytherapy dose rate unknown,392,Based on protocol advice,,T3,0,,,4,,,,,,,,0,2015
+430,4,Laparoscopic Radical Prostatectomy,533,Based on protocol advice,,,,9,0,0,,,,0,,,,0,2013
+431,9,External beam radiotherapy,430,Other,,,,,,0,,,,,,,2,,2012
+432,8,Watchful waiting,407,N/A,,,,9,,0,65,,,0,0,,2,0,2016
+433,13,Watchful waiting,425,Based on protocol advice,,T2c,,,0,,,,,,,,1,,2013
+434,8,External beam radiotherapy,364,Based on protocol advice,,,,,0,0,,,,,0,,1,,2010
+435,4,Watchful waiting,369,Based on protocol advice,,T2c,,9,3,0,,,,,,,,,2017
+436,6,Laparoscopic Radical Prostatectomy,396,Based on protocol advice,,,9,,3,,,,,,,,1,,2017
+437,10,Robot radical prostatectomy,445,Lost to FU,,,9,,4,,,,,,,<0.1,,,2017
+438,10,Robot radical prostatectomy,387,,,T2c,,,,,,,,,,,,,2017
+439,2,Lost to FU,392,Other,,T2c,0,,0,3,,,0,,,,1,,2011
+440,4,Watchful waiting,407,Lost to FU,,"T2a  (a,b,c)",,0,0,,,,0,,,,2,,2014
+441,6,Laparoscopic Radical Prostatectomy,491,Based on protocol advice,,,0,,,,,,,0,,,1,,2014
+442,7,Robot radical prostatectomy,371,Based on protocol advice,,,0,9,,0,,,,,,,1,,2009
+443,1,Brachytherapy High dose rate,439,Other,,"T2a  (a,b)",0,,0,,,,,,1,,1,,2009
+444,3,Brachytherapy Low-dose rate,404,Based on protocol advice,,,,9,0,0,,,,,,,2,,2017
+445,3,Laparoscopic Radical Prostatectomy,391,Based on protocol advice,,,,,,,,,,0,,"<0,10",,,2015
+446,4,Open radical prostatectomy,432,N/A,,,,,0,0,NA,,,,,,2,,2016
+447,4,Died,405,Based on protocol advice,,T2c,0,9,0,0,,,,0,0,,,0,2017
+448,11,Robot radical prostatectomy,430,Based on protocol advice,,,,0,,0,,,,,,,,,2017
+449,4,Open radical prostatectomy,454,Based on protocol advice,,,0,,0,,,,,,,"0,1",1,,2014
+450,4,Laparoscopic Radical Prostatectomy,466,Based on protocol advice,,T2c,,,3,,,10,,,,,,,2015
+451,5,Robot radical prostatectomy,395,Based on protocol advice,,,,9,,,,,,,0,,,,2015
+452,2,External beam radiotherapy,477,Based on protocol advice,,,,,0,3,,,0,0,0,,,,2017
+453,4,Brachytherapy dose rate unknown,389,N/A,,,9,,0,3,,,0,,,,,,2013
+454,3,Brachytherapy Low-dose rate,434,Based on protocol advice,,,,,0,0,,,,,,0.01,1,0,2017
+455,9,On request,410,Other,,,,9,3,,,,,,0,,1,,2013
+456,4,External beam radiotherapy,398,Based on protocol advice,,,0,,0,0,,,1,,,,1,,2017
+457,12,Open radical prostatectomy,454,Lost to FU,,,0,,3,,,,,,,,,,2012
+458,3,Robot radical prostatectomy,455,Other,,,,,,4,,,0,,,,1,,2008
+459,6,Laparoscopic Radical Prostatectomy,375,On request,,,0,,0,,,,,,,,,,2009
+460,8,Robot radical prostatectomy,456,Based on protocol advice,,,,,,0,,,,0,0,"0,04",,,2017
+461,6,Died,431,N/A,,T2c,,,0,,,,1,,,,,,2013
+462,11,External beam radiotherapy,406,Based on protocol advice,,,,,3,,,,,,,,,,2011
+463,2,Robot radical prostatectomy,381,Based on protocol advice,,,,,,,,,,,0,,1,,2012
+464,4,Robot radical prostatectomy,362,Based on protocol advice,,T2c,0,,,,,,,,,,,,2012
+465,1,Brachytherapy Low-dose rate,566,Based on protocol advice,,T2c,0,,3,,,,,0,,,,,2016
+466,4,Open radical prostatectomy,392,N/A,,,,,0,,,,,,0,,,,2011
+467,4,Watchful waiting,413,Based on protocol advice,,,,9,3,4,,,1,,,,1,,2014
+468,8,External beam radiotherapy,365,Other,,,,0,,3,,,,,1,,,,2010
+469,12,External beam radiotherapy,438,Based on protocol advice,,,,,0,,30 ml,,1,,0,0.01,2,,2015
+470,6,External beam radiotherapy,456,Based on protocol advice,,T2c,,9,,,,,1,,9,"<0,04",,0,2013
+471,3,Watchful waiting,423,Lost to FU,,T2c,,9,,0,,,,,,,,,2016
+472,9,Robot radical prostatectomy,546,Based on protocol advice,485,T2c,0,,,,,,,,0,,,0,2009
+473,4,Robot radical prostatectomy,503,N/A,,T3,0,,0,,,,,0,0,"<0,1",1,,2012
+474,4,Robot radical prostatectomy,369,Based on protocol advice,,,,,0,3,,,,,,,1,,2011
+475,13,Robot radical prostatectomy,460,Based on protocol advice,,T3,0,0,3,,,,,0,,,2,,2012
+476,9,Watchful waiting,386,,,,,,0,,,,,,0,,,,2017
+477,5,External beam radiotherapy,402,Other,,,,0,,0,,,0,,,,1,,2016
+478,6,Robot radical prostatectomy,502,Based on protocol advice,,T2c,,,3,0,,,0,,,,,0,2010
+479,1,Open radical prostatectomy,429,Based on protocol advice,,T3,,,3,0,,,,9,,0,1,,2010
+480,4,Robot radical prostatectomy,363,Anxiety,,,,,3,4,48,,0,,,,1,,2013
+481,3,Laparoscopic Radical Prostatectomy,665,Other,,T2c,,,,,,,,,1,,,,2011
+482,8,External beam radiotherapy,566,Anxiety,,T3,,,3,4,,,,,,,,0,2017
+483,4,Brachytherapy dose rate unknown,377,N/A,,,,,0,0,,,9,,0,,1,,2011
+484,4,Robot radical prostatectomy,371,N/A,,,0,,,4,,,,,0,,,,2010
+485,7,Brachytherapy dose rate unknown,393,N/A,,,,,3,,47,,,,0,,,,2012
+486,4,External beam radiotherapy,373,N/A,,,,,,,,,,0,,,,,2014
+487,3,Watchful waiting,389,Based on protocol advice,,T2c,,,3,,,,1,,,,,9,2012
+488,9,External beam radiotherapy,395,Based on protocol advice,,,9,,0,4,,,,,,,1,,2011
+489,3,External beam radiotherapy,404,Based on protocol advice,462,,0,0,0,,,,,,,,,,2009
+490,6,Brachytherapy dose rate unknown,428,Based on protocol advice,,T2c,,,,0,,,,0,,,1,0,2013
+491,4,Watchful waiting,390,Other,,,,,3,,,,0,,,,,,2010
+492,4,Laparoscopic Radical Prostatectomy,353,N/A,,,,,,0,65,,,,0,,,,2014
+493,5,Robot radical prostatectomy,414,Based on protocol advice,,,,,,,,,,,0,,1,,2013
+494,6,Other or unknown treatment,491,Other,,,,0,0,3,,1,,,,,,0,2017
+495,18,Robot radical prostatectomy,510,N/A,,T3,0,0,0,4,,,,,,0.003,1,0,2014
+496,8,External beam radiotherapy,428,Based on protocol advice,,"T2a  (a,b,c)",,,,,,5,,,,,2,,2013
+497,4,Laparoscopic Radical Prostatectomy,396,Based on protocol advice,,"T2a  (a,b,c)",,,,,,,,,,,1,,2014
+498,7,External beam radiotherapy,375,Based on protocol advice,,,0,0,3,,,,,,,,1,0,2013
+499,4,Brachytherapy Low-dose rate,448,Other,,,,,,,,,,,,,,0,2012
+500,4,Robot radical prostatectomy,459,Lost to FU,,"T2a  (a,b,c)",9,9,,3,,,,,0,,2,,2015
+501,4,Brachytherapy dose rate unknown,407,Based on protocol advice,,,,0,0,,,,,,,,,,2015
+502,1,Watchful waiting,202,Based on protocol advice,,T2c,,9,,,,,,,,,,,2012
+503,4,Died,444,Based on protocol advice,,,,,3,4,,,,,,,,,2009
+504,2,Brachytherapy Low-dose rate,467,Based on protocol advice,,,,,,4,,,0,,0,,,,2017
+505,4,Brachytherapy dose rate unknown,400,Other,,,,0,,,,,,,,,,,2013
+506,7,Brachytherapy Low-dose rate,454,Based on protocol advice,,,,,,,,,,0,,,1,,2009
+507,2,Brachytherapy dose rate unknown,374,N/A,,,,,0,3,50 ml,,0,,,,,,2014
+508,4,Robot radical prostatectomy,353,Lost to FU,,,,,,0,,,0,,,,1,,2017
+509,8,Watchful waiting,477,Based on protocol advice,,,9,,3,,,,,1,1,0,1,,2016
+510,15,External beam radiotherapy,430,N/A,,,0,,4,,,,,,,,1,,2012
+511,4,Robot radical prostatectomy,430,Based on protocol advice,,,,,0,3,,,,0,,,1,,2008
+512,10,Other or unknown treatment,499,N/A,,,9,0,3,0,35 ml,,,,,,,,2013
+513,4,Robot radical prostatectomy,480,Based on protocol advice,,T2c,,,,0,,,,,,,,,2015
+514,12,Robot radical prostatectomy,397,Lost to FU,,,9,9,,,,,,,,,,,2015
+515,11,Robot radical prostatectomy,395,Based on protocol advice,,"T2a  (a,b,c)",0,,,,57,,,0,,,2,,2011
+516,4,Brachytherapy dose rate unknown,756,Other,,,0,,,0,,,,0,,,1,,2010
+517,4,Robot radical prostatectomy,413,Based on protocol advice,,T2c,,,,4,,,0,,,,,,2016
+518,2,External beam radiotherapy,392,Based on protocol advice,,T3,9,,3,,,,,,,,1,,2015
+519,3,Brachytherapy Low-dose rate,382,Based on protocol advice,,T2c,,,0,0,,,,,0,,,,2012
+520,7,Watchful waiting,378,Based on protocol advice,,,,,3,3,,,,,,0.003,2,,2010
+521,4,Laparoscopic Radical Prostatectomy,426,Other,,,0,,3,,,,,,,,,,2011
+522,1,Robot radical prostatectomy,430,Based on protocol advice,,"T2a  (a,b,c)",,,,,,,,,1,,,,2011
+523,4,External beam radiotherapy,546,Based on protocol advice,,,,,0,3,,,,,,,,,2016
+524,4,Died,362,Based on protocol advice,,,0,,,3,,,,,,,1,0,2017
+525,1,Lost to FU,386,Other,,,,,0,0,,,,,,,1,,2011
+526,4,Watchful waiting,440,N/A,,T3,,,0,0,,,,,,,,,2017
+527,2,External beam radiotherapy,414,Based on protocol advice,,,0,0,,0,,,1,,1,0.01,,0,2008
+528,3,Laparoscopic Radical Prostatectomy,385,Other,,,0,,,,46,,,,,,,,2008
+529,4,External beam radiotherapy,399,Based on protocol advice,,,,,3,,,,0,,1,,2,,2017
+530,12,Watchful waiting,1493,Other,,,0,0,,,,,0,,0,,1,,2011
+531,5,Brachytherapy Low-dose rate,425,Based on protocol advice,,,,,0,4,,,,,0,,1,,2012
+532,11,Open radical prostatectomy,413,Based on protocol advice,,"T2a  (a,b,c)",,,3,3,,,,,0,,2,,2017
+533,6,External beam radiotherapy,431,N/A,,,,,0,,,,,,,,1,,2016
+534,8,Robot radical prostatectomy,362,Based on protocol advice,,,,,,,,,,1,,,1,,2009
+535,4,External beam radiotherapy,509,Based on protocol advice,,,,,,0,,,,,,,,,2008
+536,4,Brachytherapy Low-dose rate,459,N/A,,,,,3,0,,,,,,,,,2009
+537,14,Laparoscopic Radical Prostatectomy,397,Other,,T2c,0,,3,,,,,,,"0,01",,,2016
+538,3,External beam radiotherapy,407,Based on protocol advice,,,9,,0,4,,,0,,,,1,,2010
+539,21,External beam radiotherapy,411,Based on protocol advice,,T3,,,,0,,,,,,,2,,2015
+540,2,Open radical prostatectomy,555,Anxiety,,,,,,,60,,,0,,,2,,2014
+541,9,Other or unknown treatment,411,Based on protocol advice,,,,,0,,43,,,,0,,1,,2016
+542,1,Died,474,Based on protocol advice,,,,9,,4,,,,,,,1,,2017
+543,4,Robot radical prostatectomy,410,Lost to FU,,,,,,3,,,,,0,,,,2012
+544,4,Other or unknown treatment,469,Based on protocol advice,,"T2a  (a,b,c)",,,,,,,,,,,1,,2015
+545,17,Robot radical prostatectomy,425,Based on protocol advice,,,,,,,,,1,,0,,,,2010
+546,4,Laparoscopic Radical Prostatectomy,431,Other,,T2c,0,,,0,,,,,,,,,2017
+547,3,Laparoscopic Radical Prostatectomy,398,Other,,,,,,,,,,,,,,,2013
+548,4,Robot radical prostatectomy,391,Based on protocol advice,,,0,,,4,,,0,,,,1,,2011
+549,10,Laparoscopic Radical Prostatectomy,480,N/A,,,,,0,,,,0,,,,,,2013
+550,7,Laparoscopic Radical Prostatectomy,390,Based on protocol advice,,,,,3,3,,,,,,,,,2011
+551,4,Open radical prostatectomy,464,Based on protocol advice,,,,,,4,,,9,,0,,,0,2015
+552,23,Robot radical prostatectomy,491,Other,,,,,3,,,,,,0,,,0,2014
+553,10,Other or unknown treatment,444,Other,,,,,3,,,,0,,,0,,,2014
+554,6,Brachytherapy dose rate unknown,398,Based on protocol advice,,T2c,0,,3,,30,,0,,,,1,,2017
+555,2,Open radical prostatectomy,480,Other,,,9,0,0,4,,,,,,,,,2013
+556,8,Open radical prostatectomy,393,Based on protocol advice,,,,,0,,,,,,0,,,,2017
+557,13,LHRH Agonists,439,On request,,,,,,,49,,,,0,<0.01,1,,2009
+558,19,Laparoscopic Radical Prostatectomy,448,Based on protocol advice,,,,0,,,,,,,,,1,,2014
+559,4,Died,491,Lost to FU,,,,,0,0,,,0,,,,1,,2013
+560,11,Watchful waiting,533,Anxiety,,,,,,,,,,0,,,1,,2010
+561,11,External beam radiotherapy,699,Based on protocol advice,,,,,0,,,,,,,,1,,2015
+562,13,Watchful waiting,448,Based on protocol advice,,"T2a  (a,b)",9,,3,4,,,,0,,,1,,2014
+563,11,External beam radiotherapy,453,N/A,,,0,,,,,,0,,,,1,,2016
+564,4,Laparoscopic Radical Prostatectomy,454,Other,,,9,0,,0,,,,0,,,1,0,2016
+565,8,Robot radical prostatectomy,439,Based on protocol advice,,T2c,,,0,4,,,,0,,,,,2012
+566,7,Robot radical prostatectomy,476,Based on protocol advice,,,,9,,4,,,,,,,1,,2016
+567,8,External beam radiotherapy,398,,,,,,3,,,,0,,,,,,2008
+568,5,Lost to FU,456,Based on protocol advice,,,9,,0,,47,,,,,,1,,2014
+569,6,Brachytherapy Low-dose rate,423,N/A,,,,,3,4,,,0,,,,2,0,2017
+570,9,Open radical prostatectomy,474,Based on protocol advice,,,9,,,,,,,,,,,0,2013
+571,4,Robot radical prostatectomy,460,N/A,,,0,,,,48,,,,,,1,0,2016
+572,1,Antiandrogens,469,Anxiety,,,9,,,,,,,0,,,1,,2016
+573,6,External beam radiotherapy,364,Based on protocol advice,,,9,,3,,,,1,,,,2,0,2014
+574,8,Robot radical prostatectomy,435,Other,,T2c,0,,,,,,0,,,"0,04",2,,2013
+575,13,External beam radiotherapy,406,Based on protocol advice,,"T2b  (a,b,c)",,,,,,,,,,,,0,2016
+576,4,Robot radical prostatectomy,504,Other,462,,0,,0,3,,,0,,,,,,2011
+577,11,Antiandrogens,379,Other,,,9,,3,4,,,1,0,,"0,04",,0,2010
+578,12,Robot radical prostatectomy,510,Anxiety,,,0,,,,,,,,0,,2,,2012
+579,2,Robot radical prostatectomy,385,Anxiety,,,,,3,0,,,,,,,1,,2011
+580,8,Brachytherapy Low-dose rate,435,Other,,T3,,0,,,,,,,,,1,,2016
+581,5,Robot radical prostatectomy,441,Based on protocol advice,,,0,9,4,,,,,,,,1,,2011
+582,12,Other or unknown treatment,480,N/A,,,0,,,,,,,,,,,,2009
+583,12,Other or unknown treatment,434,Other,,,,0,3,0,,,,,,"0,1",1,,2012
+584,20,Robot radical prostatectomy,386,Based on protocol advice,,,0,,3,,,,,,0,,1,,2012
+585,9,Brachytherapy High dose rate,460,Based on protocol advice,,,,,0,0,,,,0,,,,,2015
+586,8,Laparoscopic Radical Prostatectomy,367,N/A,,,,9,3,0,68,,0,0,,,,,2014
+587,16,Watchful waiting,455,Based on protocol advice,,,,,,4,,,,,,,,,2012
+588,4,Lost to FU,462,Based on protocol advice,,,,,,0,,,,,,,1,,2014
+589,4,Robot radical prostatectomy,413,Based on protocol advice,432,,0,,0,0,,,,,1,,1,,2017
+590,4,Laparoscopic Radical Prostatectomy,402,Based on protocol advice,,T2c,,,3,0,,,,,0,,,,2011
+591,5,Robot radical prostatectomy,426,Based on protocol advice,,T2c,,,4,0,,,,,,,1,,2008
+592,7,Robot radical prostatectomy,392,Based on protocol advice,,T2c,,9,3,3,,,,,,,1,,2013
+593,10,Watchful waiting,440,Based on protocol advice,,T3,9,,0,3,,,,,0,,1,0,2014
+594,5,Other or unknown treatment,423,N/A,,,,,0,,,,,,,,1,,2014
+595,4,Lost to FU,365,Based on protocol advice,,,,,,0,,,,,,,1,0,2013
+596,5,Open radical prostatectomy,415,Based on protocol advice,,,0,,4,4,55,,,,1,0.003,,,2015
+597,2,Other or unknown treatment,385,Other,,,,,,,50,,0,,,,1,0,2014
+598,15,External beam radiotherapy,441,Other,,T3,0,0,,4,,,,0,,,,,2016
+599,3,Robot radical prostatectomy,470,N/A,,T2c,,,,,,,,,0,,,,2010
+600,3,Robot radical prostatectomy,462,Anxiety,,,,,0,,,,,,,,1,,2013
+601,4,Robot radical prostatectomy,398,Based on protocol advice,,,0,,,4,,,0,,0,,,0,2013
+602,1,Open radical prostatectomy,413,Based on protocol advice,,,,,,0,,2,,,0,,,1,2012
+603,10,Laparoscopic Radical Prostatectomy,362,Other,,"T2a  (a,b)",,,,,65,,,,9,0.008,,,2012
+604,8,Robot radical prostatectomy,383,Based on protocol advice,,,,9,0,,,,0,0,,,1,0,2015
+605,16,Brachytherapy Low-dose rate,398,Based on protocol advice,,,,9,0,3,,,,,,,,0,2012
+606,6,External beam radiotherapy,398,N/A,,T3,,,3,3,,2,,,,,1,,2017
+607,8,Lost to FU,414,N/A,,,,,4,,,,,0,,,,,2011
+608,4,LHRH Agonists,501,Based on protocol advice,,,,,,0,,,,0,,,1,0,2015
+609,5,Brachytherapy High dose rate,393,N/A,,,9,9,,0,,,,,,,,,2015
+610,2,Brachytherapy dose rate unknown,372,Based on protocol advice,,,,9,3,4,,,,,0,,1,,2014
+611,1,Laparoscopic Radical Prostatectomy,429,Based on protocol advice,,,0,,0,,,,,,,,2,,2017
+612,13,Brachytherapy dose rate unknown,441,Based on protocol advice,,,0,9,3,3,,,0,0,,,,0,2009
+613,5,Robot radical prostatectomy,434,Based on protocol advice,,,,,0,4,35 ml,,0,,,,,,2012
+614,5,Watchful waiting,371,Based on protocol advice,,,0,,0,4,,,,,0,"0,2",,0,2012
+615,6,Brachytherapy High dose rate,419,Based on protocol advice,,,,,,3,,,,,0,,,,2013
+616,9,Brachytherapy High dose rate,434,Based on protocol advice,,"T2a  (a,b)",,9,,,,,,,,,2,,2013
+617,18,Lost to FU,378,Lost to FU,,T2c,,0,,,,,,,0,"0,03",1,,2008
+618,13,Open radical prostatectomy,441,Based on protocol advice,,,,,,,,,,0,0,,2,,2017
+619,4,Robot radical prostatectomy,392,Based on protocol advice,,,9,,,,,,,0,,,,,2013
+620,11,Laparoscopic Radical Prostatectomy,170,Based on protocol advice,,,,,,,30,,,0,,,2,,2012
+621,3,Open radical prostatectomy,363,Other,,T3,,9,3,,,,,,,,,,2011
+622,5,External beam radiotherapy,382,Based on protocol advice,,T2c,9,0,,3,,,,0,0,,1,,2012
+623,5,Laparoscopic Radical Prostatectomy,466,Lost to FU,,,,9,0,0,,,0,0,0,,1,,2017
+624,4,Watchful waiting,1493,Based on protocol advice,,T2c,,,,,,,,,0,,,,2013
+625,9,Brachytherapy Low-dose rate,367,Based on protocol advice,,,0,0,,,,,,,,"0,1",1,,2009
+626,2,Robot radical prostatectomy,431,N/A,,,,,,,,,,,,,,,2013
+627,19,Laparoscopic Radical Prostatectomy,399,Based on protocol advice,,,,,0,0,,,,0,,,,,2013
+628,9,Watchful waiting,456,Based on protocol advice,,T2c,9,0,3,0,,,0,0,,,,,2015
+629,11,Open radical prostatectomy,454,Based on protocol advice,,,,,3,,,,,,,0,1,,2016
+630,15,External beam radiotherapy,429,N/A,,T2c,,,,0,,,0,,,,,,2011
+631,16,Open radical prostatectomy,566,Based on protocol advice,,,,,,4,,,,,0,,,,2012
+632,12,Robot radical prostatectomy,398,On request,,,,,,4,,,0,1,0,,,0,2012
+633,11,Lost to FU,499,N/A,,,,,,,,,,0,,,,0,2015
+634,12,Watchful waiting,391,Based on protocol advice,,,,,,4,,,,,,,1,0,2009
+635,5,Robot radical prostatectomy,665,Based on protocol advice,485,,,,,0,,,,,1,,,,2012
+636,7,Other or unknown treatment,396,Based on protocol advice,,,,,0,0,30 ml,,0,,,,1,,2015
+637,3,Brachytherapy dose rate unknown,465,On request,,"T2a  (a,b)",,,,,,,,,0,,,,2014
+638,13,Brachytherapy High dose rate,353,N/A,,,0,,0,,,,0,,,,1,0,2012
+639,12,External beam radiotherapy,456,Lost to FU,,,,,4,0,,,1,,1,,,,2017
+640,12,Watchful waiting,459,Based on protocol advice,,,,0,,,,,,,,<0.05,1,,2007
+641,4,External beam radiotherapy,439,Based on protocol advice,,,9,,3,,68,,,,,,1,0,2013
+642,1,Laparoscopic Radical Prostatectomy,476,Other,,,,,,,53,,,,,,2,0,2014
+643,5,Lost to FU,411,Based on protocol advice,,,,9,,,,,,0,,,,0,2011
+644,4,External beam radiotherapy,462,Based on protocol advice,,,,0,3,0,,,,,,,,,2016
+645,1,External beam radiotherapy,1493,Based on protocol advice,,,,,0,,,10,,0,1,,1,,2013
+646,3,Watchful waiting,483,Based on protocol advice,,,9,,,3,,,,,,,,,2017
+647,17,External beam radiotherapy,464,Other,432,"T2a  (a,b,c)",0,,,0,,,,,,,1,,2009
+648,12,Laparoscopic Radical Prostatectomy,377,Based on protocol advice,,T2c,,9,,0,,,,,0,,,,2016
+649,4,Robot radical prostatectomy,379,N/A,,,,,3,0,,,,0,,,1,,2009
+650,15,Other or unknown treatment,466,Based on protocol advice,431,,0,9,,3,,,,,,,,,2017
+651,1,External beam radiotherapy,390,Based on protocol advice,,,,,,0,,,,1,,0,2,,2011
+652,4,Open radical prostatectomy,442,On request,,,,,,0,,,,,,,1,,2009
+653,10,Brachytherapy High dose rate,467,Other,,,,0,0,0,,,,0,1,,1,,2015
+654,6,Robot radical prostatectomy,404,Based on protocol advice,,,,,,,,,,,,,,,2011
+655,2,Lost to FU,428,Other,,,0,,,,,,,,,,,,2015
+656,4,Brachytherapy Low-dose rate,499,Based on protocol advice,,,9,9,,0,,,,,0,,,,2012
+657,8,External beam radiotherapy,393,Other,,,,,,4,,,,,,,1,,2015
+658,4,External beam radiotherapy,476,Based on protocol advice,,,,,4,,,,,,,,,,2017
+659,10,Laparoscopic Radical Prostatectomy,202,Lost to FU,,,,,,,,,,,,,1,,2017
+660,3,Brachytherapy Low-dose rate,392,Other,,T3,,,0,3,,,,0,,,,,2011
+661,3,Robot radical prostatectomy,438,Based on protocol advice,,T2c,,,0,0,,,,0,,,,,2011
+662,11,Robot radical prostatectomy,374,Based on protocol advice,,,9,,,,,,0,,,,,,2009
+663,9,Robot radical prostatectomy,385,N/A,,T2c,,,0,0,82,,,,0,"<0,04",,,2014
+664,4,Other or unknown treatment,476,Based on protocol advice,,T2c,,,3,,,,,0,0,,,,2013
+665,4,Brachytherapy Low-dose rate,414,Based on protocol advice,,T2c,,,,,,,,,,,,,2010
+666,6,Robot radical prostatectomy,566,N/A,,,,,,4,,,,,,,,,2009
+667,7,Brachytherapy Low-dose rate,454,Based on protocol advice,,T2c,9,,4,0,,,,,,,,,2017
+668,2,Robot radical prostatectomy,699,Based on protocol advice,,,,0,,,,3,,,0,,,,2013
+669,5,Brachytherapy Low-dose rate,379,N/A,,,,,,3,,,,,1,,,,2011
+670,4,External beam radiotherapy,413,Based on protocol advice,,,,,,0,47,,,,,,,,2016
+671,21,Antiandrogens,202,Based on protocol advice,,,0,,,,,,1,,,"0,04",1,,2015
+672,4,Robot radical prostatectomy,387,Based on protocol advice,,,9,,0,3,,,,0,,,,,2012
+673,18,Other or unknown treatment,406,Based on protocol advice,,,,,3,,,,,,,,,,2009
+674,1,External beam radiotherapy,464,Other,,,,,3,,,,9,,,,,,2012
+675,8,External beam radiotherapy,441,Based on protocol advice,,,,,,,,,1,0,,,,,2010
+676,2,Died,483,Based on protocol advice,,,,,,,50,,1,,,,1,,2014
+677,4,External beam radiotherapy,410,Based on protocol advice,,,,0,3,0,37,,0,,,,,,2017
+678,2,Robot radical prostatectomy,381,Anxiety,,,,,0,,,,,,,,,,2015
+679,15,External beam radiotherapy,402,Based on protocol advice,,,,,3,3,,,0,1,,"0,02",,,2013
+680,5,Robot radical prostatectomy,469,Based on protocol advice,,,9,,,3,,,,,,,,,2014
+681,3,Brachytherapy dose rate unknown,375,Based on protocol advice,,,,,,4,,,,,,,1,,2017
+682,19,Brachytherapy Low-dose rate,441,Other,,,,9,0,,,,0,,,,1,,2013
+683,7,Robot radical prostatectomy,483,N/A,,,,,,,,,,0,,,,,2014
+684,2,Other or unknown treatment,501,On request,,,,,3,,,,,,,<0.1,,,2012
+685,12,Robot radical prostatectomy,395,Based on protocol advice,,,,,3,,,,,,,,,,2015
+686,15,External beam radiotherapy,396,,,,,,4,,,,,,0,,1,0,2014
+687,3,External beam radiotherapy,665,Based on protocol advice,,,9,,,,,3,,,,,,,2015
+688,11,Watchful waiting,379,Based on protocol advice,,T2c,,,,,,,0,,0,,1,,2015
+689,11,Watchful waiting,363,Other,,T2c,,,3,,,,,,0,,,,2010
+690,4,Other or unknown treatment,401,Based on protocol advice,,,9,,,,,,,,,,,,2009
+691,8,External beam radiotherapy,369,Based on protocol advice,,,9,,,,25 ml,,,,1,"0,04",,,2013
+692,4,Open radical prostatectomy,504,Based on protocol advice,,,,,2,4,,2,,,,,1,1,2013
+693,4,Robot radical prostatectomy,459,Based on protocol advice,,"T2b  (a,b,c)",9,,,,68,,,,,,,0,2011
+694,4,Lost to FU,455,On request,,T2c,9,9,3,,55,,0,,0,,,,2017
+695,4,Open radical prostatectomy,509,N/A,,,,9,3,0,,,0,,,,,0,2014
+696,1,Other or unknown treatment,530,Based on protocol advice,,"T2a  (a,b,c)",,,,4,,,,0,,"0,04",1,0,2013
+697,5,External beam radiotherapy,401,Based on protocol advice,,,0,9,,0,,,,,,,1,,2015
+698,3,Brachytherapy High dose rate,376,Based on protocol advice,,,9,,3,,,,,,,,,,2009
+699,4,Open radical prostatectomy,402,Based on protocol advice,,,0,,,0,,,,,0,<0.05,1,,2017
+700,8,External beam radiotherapy,398,Other,,"T2a  (a,b,c)",,,,3,,,,,,,,,2011
+701,3,External beam radiotherapy,435,Based on protocol advice,,,9,,,3,43,,,,,"0,01",1,,2011
+702,1,Laparoscopic Radical Prostatectomy,464,Based on protocol advice,,T2c,,,,0,,,,0,,,,,2015
+703,3,Other or unknown treatment,393,N/A,,T3,,0,,3,,,0,0,,,1,0,2016
+704,4,Open radical prostatectomy,425,Other,,,,,,0,,,,,0,,,0,2014
+705,2,Brachytherapy High dose rate,597,Based on protocol advice,,,,,0,,,,0,,,,,,2013
+706,1,Brachytherapy High dose rate,509,Other,,,,9,0,3,,12,,0,,,,,2017
+707,4,Robot radical prostatectomy,402,Based on protocol advice,,,,,,0,,,0,,,,,,2015
+708,6,Brachytherapy Low-dose rate,502,Based on protocol advice,,,,,,,,,,,,,1,,2014
+709,6,Laparoscopic Radical Prostatectomy,405,Based on protocol advice,,,,9,3,4,,,,,,,,,2015
+710,10,Other or unknown treatment,469,Based on protocol advice,,,,,0,0,,,,,0,,1,,2016
+711,3,Other or unknown treatment,398,N/A,,T2c,,,3,3,,2,,,,,1,0,2012
+712,12,Robot radical prostatectomy,503,Anxiety,,,,9,,,,,,,1,,1,,2013
+713,11,Robot radical prostatectomy,371,Based on protocol advice,,"T2b  (a,b)",,0,,,,,0,,,,1,,2012
+714,13,External beam radiotherapy,469,Based on protocol advice,,,,,,,60,,,,0,,,,2015
+715,12,External beam radiotherapy,699,Other,,,,,0,,,,,0,,,1,,2012
+716,3,Robot radical prostatectomy,470,Other,,,,,3,3,,,,,,,1,0,2017
+717,4,Laparoscopic Radical Prostatectomy,401,Other,,T2c,,,0,0,,,,,0,,1,,2016
+718,10,Robot radical prostatectomy,414,Other,,,,,,,,5,0,,,,1,,2014
+719,14,Open radical prostatectomy,546,Lost to FU,,,,,0,4,,,,,,,1,,2014
+720,1,Laparoscopic Radical Prostatectomy,414,Based on protocol advice,,T2c,,9,0,,,,,,,,,,2016
+721,12,Open radical prostatectomy,389,On request,,T2c,,,0,,,,,,,,2,,2015
+722,13,Open radical prostatectomy,415,Other,,,,,0,,,,,,,"<0,10",1,,2008
+723,1,Open radical prostatectomy,364,Based on protocol advice,,,,,3,4,,,,,,,1,9,2015
+724,3,External beam radiotherapy,426,Based on protocol advice,,T2c,,,3,,,2,,,0,,,,2010
+725,1,External beam radiotherapy,476,Based on protocol advice,,,9,,,0,,,,,,,2,,2017
+726,2,Robot radical prostatectomy,392,On request,,,,,,0,,,,,,,1,,2017
+727,11,Open radical prostatectomy,665,Based on protocol advice,,T2c,,9,,0,,,,1,,,,,2017
+728,13,Robot radical prostatectomy,468,Based on protocol advice,,T3,,,3,4,,,,0,1,,1,,2014
+729,4,Robot radical prostatectomy,459,On request,,T2c,0,,0,,,,1,0,,,,,2015
+730,15,Died,365,Other,,,,0,,,,1,,0,,,,,2013
+731,2,External beam radiotherapy,420,N/A,,,,,0,3,,,0,,0,,1,,2014
+732,12,Robot radical prostatectomy,483,Based on protocol advice,,,,,,,,,,,1,,,,2015
+733,10,Brachytherapy dose rate unknown,402,Other,,T2c,9,,0,0,,,0,0,,"<0,10",,0,2013
+734,14,Brachytherapy Low-dose rate,385,Other,,"T2b  (a,b)",0,0,,0,46,,,0,,,1,,2013
+735,4,Open radical prostatectomy,439,Based on protocol advice,,,,,0,,,,,,,,,,2009
+736,1,Brachytherapy High dose rate,375,Based on protocol advice,,,,9,0,0,,,,,,,,,2015
+737,6,Brachytherapy Low-dose rate,499,Based on protocol advice,,,,0,,0,,,0,,,,1,,2014
+738,8,Other or unknown treatment,398,N/A,,"T2a  (a,b,c)",,,,,,,,,,,1,,2017
+739,4,Open radical prostatectomy,387,Other,,,,0,0,,,,,,,,1,,2016
+740,3,Laparoscopic Radical Prostatectomy,468,Other,,,,,,4,35,,,,,,2,,2012
+741,9,Robot radical prostatectomy,365,Based on protocol advice,,,,,3,,,,9,0,,,1,,2015
+742,4,External beam radiotherapy,440,Based on protocol advice,,T2c,9,,,4,,,,0,,,1,0,2014
+743,2,Brachytherapy dose rate unknown,441,Based on protocol advice,,,,9,3,,65,,0,,,,1,,2013
+744,9,Open radical prostatectomy,379,Based on protocol advice,,,9,0,0,,,,,,,,1,,2016
+745,4,Robot radical prostatectomy,431,Based on protocol advice,428,,,,,,,,,0,,,1,,2013
+746,10,Watchful waiting,441,Based on protocol advice,,T2c,,,,4,,,0,,0,"0,04",,,2017
+747,17,Robot radical prostatectomy,435,On request,,,,0,0,,,,,,,,,,2011
+748,11,External beam radiotherapy,456,Based on protocol advice,,,9,0,3,,,,,,,"0,04",1,0,2016
+749,4,Laparoscopic Radical Prostatectomy,393,Based on protocol advice,,T2c,,,4,,,,,,,,,,2010
+750,5,Robot radical prostatectomy,362,Based on protocol advice,,T2c,,,0,0,30,,,0,,,,,2009
+751,4,Died,365,N/A,,,,,2,0,,,0,,,,2,,2011
+752,4,External beam radiotherapy,447,N/A,,T2c,0,,3,0,,,,,,0.008,1,,2012
+753,3,Other or unknown treatment,429,N/A,,,,9,,4,,,,,,,,,2017
+754,1,Watchful waiting,392,N/A,,,,,3,0,,,0,,,,1,,2016
+755,11,Watchful waiting,380,Based on protocol advice,,T2c,,,,,,,,,,,,,2013
+756,4,Laparoscopic Radical Prostatectomy,445,Based on protocol advice,,,,,0,,,,,,,,2,0,2014
+757,5,Robot radical prostatectomy,430,Anxiety,,T2c,,0,,,,,,0,1,,2,,2012
+758,4,Robot radical prostatectomy,390,Anxiety,,T3,,,,4,,,,,,,,,2016
+759,5,Lost to FU,385,Based on protocol advice,,,,,3,0,,,,,,,,,2011
+760,10,Watchful waiting,387,Anxiety,,T2c,,,,0,,,,,,,,,2014
+761,20,Watchful waiting,398,Anxiety,,,9,9,,,,,,0,0,"0,1",1,,2014
+762,22,External beam radiotherapy,502,Other,,,,,0,,,,,,,,,,2010
+763,4,Watchful waiting,459,Other,,,0,0,3,3,,,,,,,,0,2012
+764,11,Robot radical prostatectomy,367,Other,,,9,,,0,,,,0,,,,,2013
+765,9,External beam radiotherapy,462,On request,,,9,,3,4,,,,,,,1,0,2017
+766,9,Laparoscopic Radical Prostatectomy,510,Other,,T2c,0,9,,,,,,,,,2,,2013
+767,2,Robot radical prostatectomy,371,Based on protocol advice,,,,,3,,,,1,,,,,0,2014
+768,4,External beam radiotherapy,428,N/A,,,,,,0,,,,,0,,,,2010
+769,3,Robot radical prostatectomy,533,Based on protocol advice,,,9,,3,3,,,,,1,,,,2016
+770,4,Other or unknown treatment,402,Based on protocol advice,,,0,,,3,,,,0,0,,,,2017
+771,4,Robot radical prostatectomy,455,Based on protocol advice,,"T2a  (a,b,c)",,0,0,4,35,,,0,1,,,,2012
+772,7,External beam radiotherapy,379,N/A,,,9,0,3,,,,,0,,,1,0,2016
+773,3,Robot radical prostatectomy,441,Based on protocol advice,,,0,0,,,,,,,,,,,2013
+774,4,Watchful waiting,371,Based on protocol advice,,,,,0,,,,,,0,,,,2014
+775,3,Open radical prostatectomy,503,Other,,,,9,,,,,9,9,,,,,2012
+776,4,Open radical prostatectomy,385,N/A,,,,,0,4,,,0,,,,,,2013
+777,12,Open radical prostatectomy,419,Based on protocol advice,,,,9,0,3,,,,0,,,,0,2015
+778,13,Open radical prostatectomy,467,Based on protocol advice,,,,,,0,,,,,,,,,2016
+779,11,Brachytherapy High dose rate,428,Based on protocol advice,,,0,,0,5,,,,,,,1,,2015
+780,4,Robot radical prostatectomy,410,Other,,,0,,0,,,,0,,,"0,05",,,2012
+781,3,Other or unknown treatment,483,Other,,"T2a  (a,b,c)",,,,,,,,0,0,,,,2016
+782,11,Watchful waiting,459,Other,,,,,3,0,,,,,,,,,2015
+783,18,Brachytherapy High dose rate,363,N/A,,,0,,,3,,,,0,,<0.1,1,,2015
+784,5,Robot radical prostatectomy,402,Anxiety,,,,,,4,,,,,,,1,,2017
+785,1,Robot radical prostatectomy,373,N/A,,,,,4,,68,,,,,,,,2013
+786,19,External beam radiotherapy,386,N/A,,T2c,,,,,,,,,,0,2,0,2011
+787,1,External beam radiotherapy,456,Based on protocol advice,,,,,3,3,,6,,,,,,,2016
+788,4,External beam radiotherapy,504,Other,,,0,,0,0,,,,,,,2,0,2016
+789,4,Brachytherapy Low-dose rate,383,Based on protocol advice,,,0,,,,,,,,,,,0,2015
+790,3,Lost to FU,393,Based on protocol advice,,T2c,,,,4,,,,,0,,1,,2016
+791,5,Robot radical prostatectomy,455,Based on protocol advice,,,9,,0,3,,,0,0,,,,,2017
+792,1,Watchful waiting,465,Based on protocol advice,,,,,4,,,,,,,,1,0,2012
+793,9,Other or unknown treatment,499,Other,,,,9,3,0,,,,,,"0,01",,,2016
+794,19,External beam radiotherapy,397,Based on protocol advice,,,,9,0,,,,,,1,"<0,04",1,0,2017
+795,11,External beam radiotherapy,379,On request,,,,,0,,,,1,,0,,,,2011
+796,1,Brachytherapy Low-dose rate,428,Based on protocol advice,,,,,3,0,,,,,,,1,,2017
+797,12,Other or unknown treatment,420,Other,,,,,3,,,,,,0,,,0,2013
+798,9,Robot radical prostatectomy,401,N/A,,,9,,0,3,,,,,,,1,,2009
+799,11,Laparoscopic Radical Prostatectomy,459,Based on protocol advice,,,,,0,0,,,1,0,1,,,,2013
+800,2,Open radical prostatectomy,372,Other,,,9,9,0,,,,,,,,,0,2012
