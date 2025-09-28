@@ -42,12 +42,12 @@ class Wrapper(EtlWrapper):
         self.episode_id_lookup = None
         self.event_field_concept_id_lookup = None
         self.stem_table_id_lookup = None
-        #self.basedata_by_pid_lookup = None
-        #self.enddata_by_pid_lookup = None
+        # self.basedata_by_pid_lookup = None
+        # self.enddata_by_pid_lookup = None
         self.challenge_by_pid_lookup = None
-        #self.source_table_basedata = None
-        #self.source_table_fulong = None
-        #self.source_table_enddata = None
+        # self.source_table_basedata = None
+        # self.source_table_fulong = None
+        # self.source_table_enddata = None
         self.source_table_challenge = None
         self.fulong_batch_number = 0
         self.FULONG_BATCH_SIZE = 5000
@@ -268,7 +268,7 @@ class Wrapper(EtlWrapper):
             raise Exception('Person id "{}" not found in lookup.'.format(p_id))
 
         return self.basedata_by_pid_lookup[p_id]
-    
+
     def create_enddata_by_pid_lookup(self):
         """
         Initialize the enddata lookup
@@ -284,7 +284,7 @@ class Wrapper(EtlWrapper):
         if p_id not in self.enddata_by_pid_lookup:
             return None
         return self.enddata_by_pid_lookup[p_id]
-    
+
     def create_challenge_by_pid_lookup(self):
         self.challenge_by_pid_lookup = {int(x['patient_id']): x for x in self.get_challenge().data_dicts}
 
@@ -292,9 +292,8 @@ class Wrapper(EtlWrapper):
         """Lookup challenge record by patient_id"""
         if self.challenge_by_pid_lookup is None:
             self.create_challenge_by_pid_lookup()
-    
+
         return self.challenge_by_pid_lookup.get(patient_id, None)
-    
 
     def gleason_sum(self, row, gleason_score1, gleason_score2):
         """
@@ -346,6 +345,7 @@ class Wrapper(EtlWrapper):
 
         return self.source_table_fulong
     """
+
     def get_challenge(self):
         if not self.source_table_challenge:
             self.source_table_challenge = SourceData(self.source_folder / 'omop_like_15.csv')
@@ -361,8 +361,8 @@ class Wrapper(EtlWrapper):
     def get_next_fulong_batch(self):
         if not self.source_table_fulong:
             self.source_table_fulong = SourceData(self.source_folder / 'fulong.csv')
-        start_index = self.fulong_batch_number*self.FULONG_BATCH_SIZE
-        end_index = (self.fulong_batch_number+1)*self.FULONG_BATCH_SIZE
+        start_index = self.fulong_batch_number * self.FULONG_BATCH_SIZE
+        end_index = (self.fulong_batch_number + 1) * self.FULONG_BATCH_SIZE
         end_index = min(end_index, len(self.source_table_fulong.data_dicts))
         self.fulong_batch_number += 1
         return self.source_table_fulong.data_dicts[start_index:end_index]
