@@ -1,0 +1,63 @@
+# Copyright 2019 The Hyve
+#
+# Licensed under the GNU General Public License, version 3,
+# or (at your option) any later version (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# https://www.gnu.org/licenses/
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# !/usr/bin/env python3
+from src.main.python.model.cdm import StemTable
+from src.main.python.util.create_record_source_value import create_basedata_visit_record_source_value
+from src.main.python.util.create_record_source_value import create_basedata_stem_table_record_source_value
+from datetime import date, datetime
+
+
+def basedata_diagnosis_to_stem_table(wrapper) -> list:
+
+    basedata = wrapper.get_basedata()
+
+    records_to_insert = []
+
+    for row in basedata:
+
+        # visit_type is 'standard'
+        visit_type = wrapper.VisitType.standard.name
+
+        # Get visit occurrence id
+        visit_record_source_value = create_basedata_visit_record_source_value(row['p_id'], visit_type)
+        visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
+
+        # Add record source value to Stem Table
+        stem_table_record_source_value = create_basedata_stem_table_record_source_value(row['p_id'],
+                                                                                        'diagnosis')
+
+        # Exception: For each person, add condition occurrence
+        record = StemTable(
+            person_id=int(row['p_id']),
+            visit_occurrence_id=visit_occurrence_id,
+            start_date=date(int(row['year_diagnosis']), 7, 1),
+            start_datetime=datetime(int(row['year_diagnosis']), 7, 1),
+            concept_id=4163261,  # Malignant tumor of prostate
+            type_concept_id=32879,
+            record_source_value=stem_table_record_source_value
+        )
+        records_to_insert.append(record)
+
+    return records_to_insert
+
+
+if __name__ == '__main__':
+    from src.main.python.database.database import Database
+    from src.main.python.wrapper import Wrapper
+
+    db = Database('postgresql://postgres@localhost:5432/postgres')  # A mock database object
+    w = Wrapper(db, '../../../../resources/source_data', '../../../../resources/mapping_tables')
+    for x in basedata_diagnosis_to_stem_table(w):
+        print(x.__dict__)
