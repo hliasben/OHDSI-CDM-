@@ -2,16 +2,17 @@
 from src.main.python.model.cdm import VisitOccurrence
 from datetime import datetime
 
+visit_type_map = {
+        "outpatient": 9201,  
+        "inpatient": 9202,
+        "emergency": 9203
+}
+
 def challenge_to_visit(wrapper) -> list:
     source = wrapper.get_challenge()
     records_to_insert = []
 
-    # Παράδειγμα mapping για τύπο επίσκεψης
-    visit_type_map = {
-        "outpatient": 9201,  # Example concept_id για outpatient
-        "inpatient": 9202,
-        "emergency": 9203
-    }
+    
 
     for row in source:
         visit_start = datetime.strptime(row['visit_start_date'], "%Y-%m-%d")
