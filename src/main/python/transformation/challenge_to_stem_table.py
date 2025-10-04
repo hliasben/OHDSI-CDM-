@@ -1,186 +1,133 @@
-# !/usr/bin/env python3
 from src.main.python.model.cdm import StemTable
-from datetime import date, datetime
-from src.main.python.util.create_record_source_value import create_basedata_visit_record_source_value
-from src.main.python.util.create_record_source_value import create_basedata_stem_table_record_source_value
-import logging
+from datetime import datetime
 
+# πρόχειροι χάρτες - ιδανικά θα έρθουν από unit_mapping / value_mapping
+unit_map = {
+    "g/dL": 8840,
+    "mg/dL": 8753,
+    "ng/mL": 8617,
+    "mmHg": 8876,
+    "mg/L": 8848,
+    "U/L": 8842,
+    "uIU/mL": 8751,
+    "10^9/L": 8713,
+    "kg/m2": 8510,
+    "mmol/L": 8754
+}
 
 def challenge_to_stem_table(wrapper) -> list:
-    """
-    Transform the challenge CSV into StemTable records
-    """
     challenge_data = wrapper.get_challenge()
-
     records_to_insert = []
-
-    operator_concept_id = None
+    id_counter = 1
+    patient_map = wrapper.patient_map
 
     for row in challenge_data:
 
-        # Handle measurements
-        if row['measurement_name'] and row['measurement_value']:
-            variable = row['measurement_name']
-            value = row['measurement_value']
-            # Lookup concept mapping
-            target = wrapper.variable_mapper.lookup(variable, value)
-            concept_id = target.concept_id
-            value_as_concept_id = target.value_as_concept_id
-            value_as_number = target.value_as_number
-            unit_concept_id = target.unit_concept_id if target.unit_concept_id else None
-            source_value = target.source_value
-            value_source_value = target.value_source_value
+        pid = patient_map.get(row['patient_id'])
 
-            # Lookup visit occurrence ID
-            visit_record_source_value = create_basedata_visit_record_source_value(
-                row['patient_id'], row['visit_type'])
-            visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
-
-            # StemTable record source value
-            stem_table_record_source_value = create_basedata_stem_table_record_source_value(
-                row['patient_id'], variable)
-
-            record = StemTable(
-                person_id=int(row['patient_id']),
-                visit_occurrence_id=visit_occurrence_id,
-                start_date=datetime.strptime(row['visit_start_date'], "%Y-%m-%d").date(),
-                start_datetime=datetime.strptime(row['visit_start_date'], "%Y-%m-%d"),
-                concept_id=concept_id if concept_id else 0,
-                value_as_concept_id=value_as_concept_id,
-                value_as_number=value_as_number,
-                unit_concept_id=unit_concept_id,
-                source_value=source_value,
-                value_source_value=value_source_value,
-                operator_concept_id=operator_concept_id,
-                type_concept_id=32879,
-                record_source_value=stem_table_record_source_value
+        # --- Measurement ---
+        if row.get('measurement_name'):
+            measurement_date = datetime.strptime(row['measurement_date'], "%Y-%m-%d")
+            rec = StemTable(
+                id=id_counter,
+                domain_id="Measurement",
+                person_id=pid,
+                concept_id=0,  # TODO: mapping από vocab
+                start_date=measurement_date.date(),
+                start_datetime=measurement_date,
+                end_date=measurement_date.date(),
+                end_datetime=measurement_date,
+                type_concept_id=44818701,
+                value_as_number=float(row['measurement_value']) if row['measurement_value'] else None,
+                unit_concept_id=unit_map.get(row['measurement_unit'], 0),
+                source_value=row['measurement_name'],
+                unit_source_value=row['measurement_unit'],
+                value_source_value=row['measurement_value'],
+                record_source_value=f"{pid}-measurement-{row['measurement_name']}"
             )
-            records_to_insert.append(record)
+            records_to_insert.append(rec)
+            id_counter += 1
 
-        # Handle conditions
-        if row['condition_name']:
-            variable = row['condition_name']
-            value = 1
-            target = wrapper.variable_mapper.lookup(variable, value)
-            concept_id = target.concept_id
-            visit_record_source_value = create_basedata_visit_record_source_value(
-                row['patient_id'], row['visit_type'])
-            visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
-            stem_table_record_source_value = create_basedata_stem_table_record_source_value(
-                row['patient_id'], variable)
-
-            record = StemTable(
-                person_id=int(row['patient_id']),
-                visit_occurrence_id=visit_occurrence_id,
-                start_date=datetime.strptime(row['condition_start_date'], "%Y-%m-%d").date() if row['condition_start_date'] else None,
-                start_datetime=datetime.strptime(row['condition_start_date'], "%Y-%m-%d") if row['condition_start_date'] else None,
-                concept_id=concept_id if concept_id else 0,
-                value_as_concept_id=None,
-                value_as_number=None,
-                unit_concept_id=None,
-                source_value=variable,
-                value_source_value=None,
-                operator_concept_id=operator_concept_id,
-                type_concept_id=32879,
-                record_source_value=stem_table_record_source_value
+        # --- Condition ---
+        if row.get('condition_name'):
+            cond_start = datetime.strptime(row['condition_start_date'], "%Y-%m-%d")
+            cond_end = None
+            if row.get('condition_end_date'):
+                cond_end = datetime.strptime(row['condition_end_date'], "%Y-%m-%d")
+            rec = StemTable(
+                id=id_counter,
+                domain_id="Condition",
+                person_id=pid,
+                concept_id=0,
+                start_date=cond_start.date(),
+                start_datetime=cond_start,
+                end_date=cond_end.date() if cond_end else None,
+                end_datetime=cond_end,
+                type_concept_id=32535,
+                source_value=row['condition_name'],
+                record_source_value=f"{pid}-condition-{row['condition_name']}"
             )
-            records_to_insert.append(record)
+            records_to_insert.append(rec)
+            id_counter += 1
 
-        # Handle procedures
-        if row['procedure_name']:
-            variable = row['procedure_name']
-            value = 1
-            target = wrapper.variable_mapper.lookup(variable, value)
-            concept_id = target.concept_id
-            visit_record_source_value = create_basedata_visit_record_source_value(
-                row['patient_id'], row['visit_type'])
-            visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
-            stem_table_record_source_value = create_basedata_stem_table_record_source_value(
-                row['patient_id'], variable)
-
-            record = StemTable(
-                person_id=int(row['patient_id']),
-                visit_occurrence_id=visit_occurrence_id,
-                start_date=datetime.strptime(row['procedure_date'], "%Y-%m-%d").date() if row['procedure_date'] else None,
-                start_datetime=datetime.strptime(row['procedure_date'], "%Y-%m-%d") if row['procedure_date'] else None,
-                concept_id=concept_id if concept_id else 0,
-                value_as_concept_id=None,
-                value_as_number=None,
-                unit_concept_id=None,
-                source_value=variable,
-                value_source_value=None,
-                operator_concept_id=operator_concept_id,
-                type_concept_id=32879,
-                record_source_value=stem_table_record_source_value
+        # --- Procedure ---
+        if row.get('procedure_name'):
+            proc_date = datetime.strptime(row['procedure_date'], "%Y-%m-%d")
+            rec = StemTable(
+                id=id_counter,
+                domain_id="Procedure",
+                person_id=pid,
+                concept_id=0,
+                start_date=proc_date.date(),
+                start_datetime=proc_date,
+                end_date=proc_date.date(),
+                end_datetime=proc_date,
+                type_concept_id=581412,
+                source_value=row['procedure_name'],
+                record_source_value=f"{pid}-procedure-{row['procedure_name']}"
             )
-            records_to_insert.append(record)
+            records_to_insert.append(rec)
+            id_counter += 1
 
-        # Handle drugs
-        if row['drug_name']:
-            variable = row['drug_name']
-            value = row['drug_dose']
-            target = wrapper.variable_mapper.lookup(variable, value)
-            concept_id = target.concept_id
-            visit_record_source_value = create_basedata_visit_record_source_value(
-                row['patient_id'], row['visit_type'])
-            visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
-            stem_table_record_source_value = create_basedata_stem_table_record_source_value(
-                row['patient_id'], variable)
-
-            record = StemTable(
-                person_id=int(row['patient_id']),
-                visit_occurrence_id=visit_occurrence_id,
-                start_date=datetime.strptime(row['drug_exposure_start_date'], "%Y-%m-%d").date() if row['drug_exposure_start_date'] else None,
-                start_datetime=datetime.strptime(row['drug_exposure_start_date'], "%Y-%m-%d") if row['drug_exposure_start_date'] else None,
-                concept_id=concept_id if concept_id else 0,
-                value_as_concept_id=None,
-                value_as_number=None,
-                unit_concept_id=None,
-                source_value=variable,
-                value_source_value=value,
-                operator_concept_id=operator_concept_id,
-                type_concept_id=32879,
-                record_source_value=stem_table_record_source_value
+        # --- Drug ---
+        if row.get('drug_name'):
+            drug_start = datetime.strptime(row['drug_exposure_start_date'], "%Y-%m-%d")
+            drug_end = datetime.strptime(row['drug_exposure_end_date'], "%Y-%m-%d")
+            rec = StemTable(
+                id=id_counter,
+                domain_id="Drug",
+                person_id=pid,
+                concept_id=0,
+                start_date=drug_start.date(),
+                start_datetime=drug_start,
+                end_date=drug_end.date(),
+                end_datetime=drug_end,
+                type_concept_id=38000175,
+                quantity=None,
+                source_value=row['drug_name'],
+                value_source_value=row['drug_dose'],
+                record_source_value=f"{pid}-drug-{row['drug_name']}"
             )
-            records_to_insert.append(record)
+            records_to_insert.append(rec)
+            id_counter += 1
 
-        # Handle observations
-        if row['observation_name']:
-            variable = row['observation_name']
-            value = row['observation_value']
-            target = wrapper.variable_mapper.lookup(variable, value)
-            concept_id = target.concept_id
-            visit_record_source_value = create_basedata_visit_record_source_value(
-                row['patient_id'], row['visit_type'])
-            visit_occurrence_id = wrapper.lookup_visit_occurrence_id(visit_record_source_value)
-            stem_table_record_source_value = create_basedata_stem_table_record_source_value(
-                row['patient_id'], variable)
-
-            record = StemTable(
-                person_id=int(row['patient_id']),
-                visit_occurrence_id=visit_occurrence_id,
-                start_date=datetime.strptime(row['observation_date'], "%Y-%m-%d").date() if row['observation_date'] else None,
-                start_datetime=datetime.strptime(row['observation_date'], "%Y-%m-%d") if row['observation_date'] else None,
-                concept_id=concept_id if concept_id else 0,
-                value_as_concept_id=target.value_as_concept_id,
-                value_as_number=target.value_as_number,
-                unit_concept_id=target.unit_concept_id if target.unit_concept_id else None,
-                source_value=target.source_value,
-                value_source_value=target.value_source_value,
-                operator_concept_id=operator_concept_id,
-                type_concept_id=32879,
-                record_source_value=stem_table_record_source_value
+        # --- Observation ---
+        if row.get('observation_name'):
+            obs_date = datetime.strptime(row['observation_date'], "%Y-%m-%d")
+            rec = StemTable(
+                id=id_counter,
+                domain_id="Observation",
+                person_id=pid,
+                concept_id=0,
+                start_date=obs_date.date(),
+                start_datetime=obs_date,
+                type_concept_id=45905771,
+                value_as_string=row['observation_value'],
+                source_value=row['observation_name'],
+                value_source_value=row['observation_value'],
+                record_source_value=f"{pid}-observation-{row['observation_name']}"
             )
-            records_to_insert.append(record)
+            records_to_insert.append(rec)
+            id_counter += 1
 
     return records_to_insert
-
-
-if __name__ == '__main__':
-    from src.main.python.database.database import Database
-    from src.main.python.wrapper import Wrapper
-
-    db = Database('postgresql://postgres@localhost:5432/postgres')
-    w = Wrapper(db, '../../../../resources/test_datasets/junior_challenge_15', '../../../../resources/mapping_tables')
-    for x in challenge_to_stem_table(w):
-        print(x.__dict__)

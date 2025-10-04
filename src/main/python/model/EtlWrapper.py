@@ -308,6 +308,45 @@ class EtlWrapper:
         message = 'INTO concept - created {}, updated {}'.format(n_creates, n_updates)
         self.log_table_completed(message, n_creates + n_updates, t2 - t1, '')
 
+    def load_vocab_from_csv(self, source_file):
+        """
+        Insert or update vocabularies from csv file to Vocabulary table.
+        Input file must have a header with Vocabulary column names.
+        Note: inserts are one-by-one, so can be slow for large files
+        """
+        self.log_query_in_progress(os.path.basename(source_file))
+
+        t1 = time.time()
+        session = self.db.get_new_session()
+        n_creates = 0
+        n_updates = 0
+
+        with open(source_file) as f_in:
+            rows = csv.DictReader(f_in)
+            for row in rows:
+                vocab = session.query(Vocabulary).get(row['vocabulary_id'])
+
+                if not vocab:
+                    vocab = Vocabulary()
+                    n_creates += 1
+                else:
+                    n_updates += 1
+
+                # Set all variables dynamically
+                for key, value in row.items():
+                    setattr(vocab, key, value if value else None)
+
+                session.add(vocab)
+
+        session.commit()
+        session.close()
+
+        t2 = time.time()
+
+        message = 'INTO vocabulary - created {}, updated {}'.format(n_creates, n_updates)
+        self.log_table_completed(message, n_creates + n_updates, t2 - t1, '')
+
+
     def load_source_to_concept_map_from_csv(self, source_file, truncate_first=False):
         source_base_name = os.path.basename(source_file)
         self.log_query_in_progress(source_base_name)

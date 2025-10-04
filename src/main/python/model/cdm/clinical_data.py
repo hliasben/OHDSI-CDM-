@@ -285,6 +285,7 @@ class ObservationPeriod(base):
     person = relationship('Person')
 
 
+
 class Person(base):
     __tablename__ = 'person'
     __table_args__ = {'schema': 'public'}

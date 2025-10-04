@@ -24,6 +24,8 @@ def create_basedata_visit_record_source_value(person_id, visit_type):
 def create_fulong_visit_record_source_value(person_id, time, visit_type):
     return _create_record_source_value(person_id, 'fulong', time, visit_type)
 
+def create_challenge_visit_record_source_value(person_id, visit_type):
+    return _create_record_source_value(person_id, 'challenge', visit_type)
 
 def create_basedata_episode_record_source_value(person_id, episode_group):
     return _create_record_source_value(person_id, 'basedata', episode_group)

@@ -19,14 +19,16 @@ from typing import Optional
 
 from src.main.python.model import EtlWrapper
 from src.main.python.model.SourceData import SourceData
-from src.main.python.util import VariableConceptMapper
-from src.main.python.model.cdm import *
-from src.main.python.transformation import *
-import enum
-
 from src.main.python.transformation.challenge_to_person import challenge_to_person
 from src.main.python.transformation.challenge_to_visit import challenge_to_visit
+from src.main.python.transformation.challenge_to_observation_period import challenge_to_observation_period
 from src.main.python.transformation.challenge_to_stem_table import challenge_to_stem_table
+from src.main.python.transformation.challenge_to_provider import challenge_to_provider
+
+from src.main.python.util import VariableConceptMapper
+from src.main.python.model.cdm import *
+#from src.main.python.transformation import *
+import enum
 
 logger = logging.getLogger(__name__)
 
@@ -42,13 +44,14 @@ class Wrapper(EtlWrapper):
         self.episode_id_lookup = None
         self.event_field_concept_id_lookup = None
         self.stem_table_id_lookup = None
-        # self.basedata_by_pid_lookup = None
-        # self.enddata_by_pid_lookup = None
-        self.challenge_by_pid_lookup = None
-        # self.source_table_basedata = None
-        # self.source_table_fulong = None
-        # self.source_table_enddata = None
+        self.basedata_by_pid_lookup = None
+        self.enddata_by_pid_lookup = None
+
         self.source_table_challenge = None
+
+        self.patient_map = None
+        self.provider_map = None
+
         self.fulong_batch_number = 0
         self.FULONG_BATCH_SIZE = 5000
 
@@ -76,37 +79,25 @@ class Wrapper(EtlWrapper):
         logger.info('Vocabulary views created')
 
         # Load custom concepts and stcm
+        self.load_vocab_from_csv('./resources/custom_vocabulary/2a_vocabularies.csv')
         self.load_concept_from_csv('./resources/custom_vocabulary/2b_concepts.csv')
-        """
+
         # Transformations
-        logger.info('{:-^100}'.format(' ETL '))
-        self.execute_transformation(basedata_to_person)
-        self.execute_transformation(basedata_to_visit)
-        self.execute_transformation(fulong_to_visit)
-        self.execute_transformation(basedata_to_stem_table)
-        while self.has_next_fulong_batch():
-            self.execute_transformation(fulong_to_stem_table)
-        self.execute_transformation(basedata_diagnosis_to_stem_table)
-        self.execute_transformation(basedata_dre_to_stem_table)
-        self.execute_transformation(fulong_dre_to_stem_table)
-        self.execute_transformation(basedata_to_observation_period)
-        self.execute_transformation(enddata_to_stem_table)
-        self.execute_transformation(basedata_to_episode)
-        self.execute_transformation(fulong_to_episode)
-        """
+        logger.info('Provider')
+        self.execute_transformation(challenge_to_provider)
+        logger.info('Person')
         self.execute_transformation(challenge_to_person)
+        logger.info('Visit')
         self.execute_transformation(challenge_to_visit)
+        logger.info('Observation period')
+        self.execute_transformation(challenge_to_observation_period)
+        logger.info('Stem table')
         self.execute_transformation(challenge_to_stem_table)
 
         logger.info('Stem table to domains')
         self.stem_table_to_domains()
 
-        """
-        logger.info('Episode event')
-        self.execute_transformation(basedata_to_episode_event)
-        self.execute_transformation(fulong_to_episode_event)
-        self.execute_transformation(cdm_source)
-        """
+  
 
         self.log_summary()
         self.log_runtime()
@@ -285,16 +276,6 @@ class Wrapper(EtlWrapper):
             return None
         return self.enddata_by_pid_lookup[p_id]
 
-    def create_challenge_by_pid_lookup(self):
-        self.challenge_by_pid_lookup = {int(x['patient_id']): x for x in self.get_challenge().data_dicts}
-
-    def lookup_challenge_by_pid(self, patient_id):
-        """Lookup challenge record by patient_id"""
-        if self.challenge_by_pid_lookup is None:
-            self.create_challenge_by_pid_lookup()
-
-        return self.challenge_by_pid_lookup.get(patient_id, None)
-
     def gleason_sum(self, row, gleason_score1, gleason_score2):
         """
         :param row:
@@ -332,19 +313,6 @@ class Wrapper(EtlWrapper):
         event_field_concept_id = self.lookup_event_field_concept_id(concept_name)
         return event_field_concept_id
 
-    """
-    def get_basedata(self):
-        if not self.source_table_basedata:
-            self.source_table_basedata = SourceData(self.source_folder / 'basedata.csv')
-
-        return self.source_table_basedata
-
-    def get_fulong(self):
-        if not self.source_table_fulong:
-            self.source_table_fulong = SourceData(self.source_folder / 'fulong.csv')
-
-        return self.source_table_fulong
-    """
 
     def get_challenge(self):
         if not self.source_table_challenge:
@@ -361,17 +329,12 @@ class Wrapper(EtlWrapper):
     def get_next_fulong_batch(self):
         if not self.source_table_fulong:
             self.source_table_fulong = SourceData(self.source_folder / 'fulong.csv')
-        start_index = self.fulong_batch_number * self.FULONG_BATCH_SIZE
-        end_index = (self.fulong_batch_number + 1) * self.FULONG_BATCH_SIZE
+        start_index = self.fulong_batch_number*self.FULONG_BATCH_SIZE
+        end_index = (self.fulong_batch_number+1)*self.FULONG_BATCH_SIZE
         end_index = min(end_index, len(self.source_table_fulong.data_dicts))
         self.fulong_batch_number += 1
         return self.source_table_fulong.data_dicts[start_index:end_index]
 
-    def get_enddata(self):
-        if not self.source_table_enddata:
-            self.source_table_enddata = SourceData(self.source_folder / 'enddata.csv')
-
-        return self.source_table_enddata
 
     def create_vocab_views(self):
         self.execute_sql_query("""
