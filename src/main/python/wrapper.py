@@ -19,15 +19,11 @@ from typing import Optional
 
 from src.main.python.model import EtlWrapper
 from src.main.python.model.SourceData import SourceData
-from src.main.python.transformation.challenge_to_person import challenge_to_person
-from src.main.python.transformation.challenge_to_visit import challenge_to_visit
-from src.main.python.transformation.challenge_to_observation_period import challenge_to_observation_period
-from src.main.python.transformation.challenge_to_stem_table import challenge_to_stem_table
-from src.main.python.transformation.challenge_to_provider import challenge_to_provider
+
 
 from src.main.python.util import VariableConceptMapper
 from src.main.python.model.cdm import *
-#from src.main.python.transformation import *
+from src.main.python.transformation import *
 import enum
 
 logger = logging.getLogger(__name__)
@@ -51,6 +47,7 @@ class Wrapper(EtlWrapper):
 
         self.patient_map = None
         self.provider_map = None
+        self.care_site_map = None
 
         self.fulong_batch_number = 0
         self.FULONG_BATCH_SIZE = 5000
@@ -83,6 +80,8 @@ class Wrapper(EtlWrapper):
         self.load_concept_from_csv('./resources/custom_vocabulary/2b_concepts.csv')
 
         # Transformations
+        logger.info('CareSite')
+        self.execute_transformation(challenge_to_care_site)
         logger.info('Provider')
         self.execute_transformation(challenge_to_provider)
         logger.info('Person')
