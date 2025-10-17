@@ -1,4 +1,44 @@
 variable_source_code,value_source_code,source_code_description,target_concept_id,target_concept_name,valid_start_date,valid_end_date,invalid_reason
+
+Gender,male,Male,8507,Male,1970-01-01,2099-12-31,
+Gender,female,Female,8532,Female,1970-01-01,2099-12-31,
+
+Race,White,White,8527,White,1970-01-01,2099-12-31,
+Race,Black,Black,8516,Black or African American,1970-01-01,2099-12-31,
+Race,Asian,Asian,8515,Asian,1970-01-01,2099-12-31,
+Race,Other,Other,8522,Other race,1970-01-01,2099-12-31,
+
+Ethnicity,Hispanic,Hispanic,38003563,Hispanic or Latino,1970-01-01,2099-12-31,
+Ethnicity,Not_Hispanic,Not Hispanic,38003564,Not Hispanic or Latino,1970-01-01,2099-12-31,
+
+visit_type,outpatient,Outpatient Visit,9202,1970-01-01,2099-12-31,
+visit_type,inpatient,Inpatient Visit,9201,1970-01-01,2099-12-31,
+visit_type,emergency,Emergency Room Visit,9203,1970-01-01,2099-12-31,
+
+smoking_status,0,Never smoker,45879404,Never smoker,1970-01-01,2099-12-31,
+smoking_status,1,Current smoker,36309332,Current smoker,1970-01-01,2099-12-31,
+smoking_status,2,Former smoker,45883458,Former smoker,1970-01-01,2099-12-31,
+
+alcohol_use,0,I didn't drink,45884585,I didn't drink,1970-01-01,2099-12-31,
+alcohol_use,1,1-7 drinks,46237780,1-7 drinks,1970-01-01,2099-12-31,
+alcohol_use,2,8-14 drinks,46238025,8-14 drinks,1970-01-01,2099-12-31,
+alcohol_use,3,15-21 drinks,46237724,15-21 drinks,1970-01-01,2099-12-31,
+alcohol_use,4,22-28 drinks,46237725,22-28 drinks,1970-01-01,2099-12-31,
+alcohol_use,5,More than 28 drinks,46238129,More than 28 drinks,1970-01-01,2099-12-31,
+
+diet_type,0,No special diet,0,No special diet,1970-01-01,2099-12-31,
+diet_type,1,Vegan,40299152,Vegan diet,1970-01-01,2099-12-31,
+diet_type,2,Vegeterian,4116980,Vegetarian,1970-01-01,2099-12-31,
+
+exercise_level,0,Gets no exercise,4038718,Gets no exercise,1970-01-01,2099-12-31,
+exercise_level,1,Gets little exercise,4036425,Gets little exercise,1970-01-01,2099-12-31,
+exercise_level,2,Excessive exercise,4010352,Excessive exercise,1970-01-01,2099-12-31,
+
+physical_activity,0,Not physically active,0,Not physically active,1970-01-01,2099-12-31,
+physical_activity,1,Physically active,4038719,Physically active,1970-01-01,2099-12-31,
+
+
+
 Mri_Targeted_Gleason1.0_Mri_Targeted_Gleason2.0,0,0+0,1633550,Gleason Grade Group 1,2022-05-09,2099-21-31,
 Mri_Targeted_Gleason1.0_Mri_Targeted_Gleason2.0,1,0+1 or 1+0,1633550,Gleason Grade Group 1,2022-05-09,2099-21-31,
 Mri_Targeted_Gleason1.0_Mri_Targeted_Gleason2.0,2,1+1 or 0+2 or 2+0,1633550,Gleason Grade Group 1,2022-05-09,2099-21-31,
